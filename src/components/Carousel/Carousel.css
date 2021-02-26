@@ -1,0 +1,27 @@
+.carousel {
+  font-family: 'Raleway', sans-serif;
+}
+
+.carousel-inner {
+  background: #168a39;
+}
+
+.carousel-slide-btn {
+  background-color: #fff;
+  border: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 2px -25px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.carousel-slide-btn i {
+  color: #03c03c;
+}

@@ -1,0 +1,99 @@
+#homepage-search {
+  background: #f7f7f7;
+  border: 1px solid #000;
+  border-radius: 13px 13px 0 0;
+  font-family: 'Raleway';
+  margin: 0.5rem;
+  padding: 0;
+}
+
+#homepage-search img {
+  background: url('../../assets/form-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+
+#homepage-search .submit {
+  background: #d2fdcb;
+  font-size: 1.25rem;
+  width: 85%;
+  font-weight: bold;
+  border: 1px solid #03c03c;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+#search-nav {
+  background: #d2fdcb;
+  border-radius: 10px 10px 0 0;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 0;
+}
+
+#search-nav a {
+  color: #000;
+  font-size: 1.75rem;
+  font-weight: 600;
+  padding: 0.75rem 2.5rem;
+}
+
+#search-nav .form-active {
+  background: #393d42;
+  color: #fff;
+}
+
+.label-container,
+col {
+  position: relative;
+}
+
+#homepage-search input,
+#homepage-search select {
+  border-radius: 20px;
+  line-height: 2rem;
+  padding: 15px 25px 5px;
+}
+
+#homepage-search select option {
+  background: #fff;
+  color: #03c03c;
+}
+
+.form-control:focus {
+  border-color: #03c03c;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #03c03c;
+}
+
+#homepage-search label {
+  font-size: 0.85rem;
+  font-weight: bold;
+  left: 13px;
+  position: absolute;
+  top: 1px;
+}
+
+#location-help {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#location-help i {
+  color: #03c03c;
+}
+
+.txt-lg {
+  font-size: 2rem;
+  font-family: 'Ranchers', cursive;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.txt-md {
+  font-size: 1.25rem;
+}
+
+.d-block {
+  display: block;
+}

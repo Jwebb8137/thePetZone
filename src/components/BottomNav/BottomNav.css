@@ -1,0 +1,19 @@
+#bottom-nav {
+  background: #393d42;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 0;
+}
+
+#bottom-nav a {
+  color: #03c03c;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  padding: 0.25rem 2rem;
+}
+
+#bottom-nav .bottom-nav-active {
+  background: #9c9c9c;
+  color: #000;
+}
