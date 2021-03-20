@@ -1,14 +1,13 @@
 #homepage-search {
   background: #f7f7f7;
-  border: 1px solid #000;
   border-radius: 13px 13px 0 0;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   margin: 0.5rem;
   padding: 0;
 }
 
 #homepage-search img {
-  background: url('../../assets/form-bg.png');
+  background: url("../../assets/form-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -25,23 +24,23 @@
 }
 
 #search-nav {
-  background: #d2fdcb;
+  background: #393d42;
   border-radius: 10px 10px 0 0;
   flex-wrap: nowrap;
-  justify-content: center;
   padding: 0;
 }
 
 #search-nav a {
-  color: #000;
+  color: #f7f7f7;
   font-size: 1.75rem;
   font-weight: 600;
   padding: 0.75rem 2.5rem;
 }
 
 #search-nav .form-active {
-  background: #393d42;
-  color: #fff;
+  border-radius: inherit;
+  color: #16af3d;
+  background: #f7f7f7;
 }
 
 .label-container,
@@ -85,7 +84,7 @@ col {
 
 .txt-lg {
   font-size: 2rem;
-  font-family: 'Ranchers', cursive;
+  font-family: "Ranchers", cursive;
   line-height: 1.2;
   letter-spacing: 0.05em;
 }

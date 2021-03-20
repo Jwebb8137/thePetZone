@@ -1,0 +1,12 @@
+.card-width {
+  width: 18rem;
+}
+
+.bg-grn {
+  background: #0ac241;
+  color: #fff;
+}
+
+.card .btn {
+  font-size: 1.25rem;
+}

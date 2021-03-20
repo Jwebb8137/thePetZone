@@ -44,7 +44,7 @@ header {
 
 .navigation li {
   color: #000;
-  font-family: 'Grandstander', cursive;
+  font-family: "Grandstander", cursive;
   font-size: 1.75em;
   margin: 0.15rem 0;
   padding: 10px;
@@ -97,7 +97,7 @@ header {
   align-items: center;
 }
 
-a:hover {
+.navigation a:hover {
   opacity: 0.8;
 }
 
