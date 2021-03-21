@@ -10,7 +10,12 @@ import Img3 from "../../assets/card3.jpg";
 const FavoritesScreen = () => {
   return (
     <Fragment>
-      <div className="w-100 container p-0 bg-light-grn pt-2">
+      <div className="favorite-container w-100 fade-in container p-0 bg-light-grn pt-2">
+        {/* <i class="fas fa-paw w-100 lg-icon mt-3"></i>
+        <h2 className="mt-1 mb-0">
+          <span>Ready to bring home a </span>
+          Furever Friend?
+        </h2> */}
         <div className="card-group">
           <Card img={Img1} name="Sasha" />
           <Card img={Img2} name="Marvin" />

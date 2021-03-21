@@ -13,14 +13,18 @@
   width: 100%;
 }
 
-#homepage-search .submit {
+#homepage-search .submit,
+.submit {
   background: #d2fdcb;
   font-size: 1.25rem;
-  width: 85%;
-  font-weight: bold;
-  border: 1px solid #03c03c;
+  font-family: "Fredoka One";
+  border: 2px solid #03c03c;
   padding: 10px 20px;
   border-radius: 30px;
+}
+
+#homepage-search .submit {
+  width: 85%;
 }
 
 #search-nav {
@@ -85,6 +89,7 @@ col {
 .txt-lg {
   font-size: 2rem;
   font-family: "Ranchers", cursive;
+  font-weight: 600;
   line-height: 1.2;
   letter-spacing: 0.05em;
 }

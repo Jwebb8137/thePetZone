@@ -3,10 +3,52 @@
 }
 
 .bg-grn {
-  background: #0ac241;
+  background: #1a8941;
   color: #fff;
 }
 
+.card {
+  position: relative;
+}
+
 .card .btn {
+  font-family: "Fredoka One";
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.card-header {
+  font-family: "Fredoka One";
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
   font-size: 1.25rem;
+  font-weight: 500;
+  background-color: rgb(253 249 244);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+u,
+.card-title strong {
+  font-family: "Fredoka One";
+  font-weight: 500;
+}
+
+.card-header i {
+  color: #0ac241;
+  margin: 0 10px;
+}
+
+.card-favorited:hover {
+  cursor: pointer;
+  font-size: 3rem;
+  opacity: 0.75;
+  transition: 0.5s;
+}
+
+.card-favorited {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #05bf3c;
+  font-size: 2.5rem;
 }

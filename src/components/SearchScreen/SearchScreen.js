@@ -6,14 +6,15 @@ import "./SearchScreen.css";
 import Img1 from "../../assets/card1.jpg";
 import Img2 from "../../assets/card2.jpg";
 import Img3 from "../../assets/card3.jpg";
+import Img4 from "../../assets/card4.jpg";
 
 const SearchScreen = () => {
   return (
     <Fragment>
-      <div className="w-100 container px-0 bg-light-grn pt-2">
+      <div className="w-100 container fade-in px-0 bg-light-grn pt-2">
         <SearchForm />
         <div className="container">
-          <CardFeatured />
+          <CardFeatured img={Img4} name="Cheeto" />
         </div>
         <div className="card-group">
           <Card img={Img1} name="Sasha" />

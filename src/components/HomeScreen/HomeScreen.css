@@ -1,3 +1,66 @@
 .video-full {
   width: 100%;
 }
+
+.grn {
+  color: #03c03c;
+}
+
+.main-heading,
+.sub-heading {
+  font-family: "Fredoka One";
+  font-size: 1.85rem;
+}
+
+.display-heading {
+  font-family: "Fredoka One";
+  font-size: 1.85rem;
+}
+
+.container {
+  position: relative;
+}
+
+.display-paw {
+  color: #d2fdcb;
+  font-size: 14rem;
+  top: -20px;
+}
+
+#display-search {
+  background: #03c03c;
+  border: 2px solid #d2fdcb;
+  color: #fff;
+  font-family: "Fredoka One";
+  letter-spacing: 1px;
+}
+
+.fade-in-1,
+.display-paw {
+  position: absolute;
+}
+
+.fade-in-1 {
+  top: 40px;
+}
+
+.main-heading,
+.sub-heading {
+  opacity: 1;
+}
+
+.fade-in-1 {
+  animation: fadeIn ease 4s;
+  color: #393d42;
+}
+.fade-in {
+  animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

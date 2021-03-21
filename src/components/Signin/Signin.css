@@ -1,0 +1,23 @@
+#signin-container .btn {
+  font-family: "Fredoka One";
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+h3 {
+  font-family: "Fredoka One";
+}
+
+.btn-grey {
+  background: #03c03c;
+  border: 2px solid #393d42;
+  color: #fff;
+}
+
+.btn-grn {
+  background: #d2fdcb;
+  color: #393d42;
+  border: 2px solid #03c03c;
+}
