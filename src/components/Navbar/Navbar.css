@@ -22,12 +22,17 @@ header {
   padding: 0;
 }
 
+#sidebar-img {
+  border-radius: 50%;
+  width: 50%;
+}
+
 .brand-logo img {
   max-width: 100%;
 }
 
 .fa-times {
-  color: #fff;
+  color: #000;
 }
 
 .navigation {
@@ -38,32 +43,33 @@ header {
 }
 
 .navigation li {
-  list-style: none;
-  float: left;
-}
-
-.navigation li {
   color: #000;
   font-family: "Grandstander", cursive;
-  font-size: 1.75em;
-  margin: 0.15rem 0;
-  padding: 10px;
-  text-transform: uppercase;
-  text-align: left;
+  font-size: 1.5em;
+  padding: 20px 0;
+  text-align: center;
   display: block;
   text-decoration: none;
 }
 
-.navigation li i {
-  margin-right: 0.5em;
-  font-size: 20px;
-  margin-bottom: 7px;
+a {
+  text-decoration: none;
+}
+
+nav span {
+  color: #fdf9f4;
+  font-family: "Fredoka One";
+  font-size: 1.25rem;
+  margin-top: 6px;
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 0.75px;
 }
 
 .show-menu-btn,
 .hide-menu-btn {
   transition: 0.4s;
-  font-size: 30px;
+  font-size: 1.5rem;
   cursor: pointer;
   display: none;
 }
@@ -90,6 +96,7 @@ header {
   border-radius: 50%;
   color: #fff;
   display: block;
+  font-size: 2rem;
   height: 1.75em;
   width: 1.75em;
   display: flex;
@@ -97,12 +104,13 @@ header {
   align-items: center;
 }
 
-.navigation a:hover {
+a:hover {
   opacity: 0.8;
 }
 
 .navigation li i {
-  color: #fa255e;
+  font-size: 3.5rem;
+  color: #4ee27b;
 }
 
 .navigation li:hover,
@@ -112,9 +120,11 @@ header {
 }
 
 #nav-logout {
+  background: #fdf9f4;
+  font-size: 1rem;
   position: absolute;
   top: 14px;
-  left: 0;
+  left: 10px;
 }
 
 /*-- Responsive CSS --*/
@@ -126,19 +136,17 @@ header {
 
   .navigation {
     position: fixed;
-    width: 100vw;
+    width: 75vw;
     height: 100vh;
-    background: #f8e5e5;
-    top: -150%;
-    left: 0;
+    background: #202123;
+    right: -150%;
+    top: 0;
     padding: 75px 0px;
     transition: 1s;
   }
 
   .navigation li {
-    background: #fffaf0;
-    border-bottom: 1px solid #808080;
-    border-top: 1px solid #808080;
+    background: #202123;
     width: 100%;
   }
 
@@ -153,15 +161,27 @@ header {
   }
 
   .hide-menu-btn {
-    background: #fa255e;
+    background-color: #fdf9f4;
+    border: 2px solid #4ee27b;
     position: absolute;
-    top: 15px;
-    padding: 0px 10px;
+    top: 20px;
+    padding: 0px 12px;
     right: 20px;
     border-radius: 5px;
   }
   .nav-respond {
-    top: 0px;
+    right: 0;
+  }
+
+  #nav > .helper-text {
+    color: #fff;
+    display: block;
+    line-height: 1;
+  }
+
+  .sub-text {
+    color: #fff;
+    font-size: 0.9rem;
   }
 
   .top-border {

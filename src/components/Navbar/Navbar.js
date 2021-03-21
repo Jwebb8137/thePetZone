@@ -1,74 +1,97 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Navbar.css';
-import Logo from '../../assets/logo.png';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
+import Logo from "../../assets/logo.png";
+import Profile from "../../assets/profile.jpg";
 
 export default class Navbar extends React.Component {
   handleMenu = () => {
-    document.getElementById('nav').classList.toggle('nav-respond');
+    document.getElementById("nav").classList.toggle("nav-respond");
   };
 
-  logout = e => {
+  logout = (e) => {
     e.preventDefault();
-    localStorage.removeItem('token');
+    localStorage.removeItem("token");
     this.props.setAuth(false);
-    window.location = '/';
+    window.location = "/";
   };
 
   render() {
     if (this.props.isAuth) {
       return (
         <header>
-          <div className='brand-logo'>
-            <Link to='/'>
+          <div className="brand-logo">
+            <Link to="/">
               <img
-                id='logo'
-                className='brand-logo'
+                id="logo"
+                className="brand-logo"
                 src={Logo}
-                alt='Brand Logo'
+                alt="Brand Logo"
               />
             </Link>
           </div>
           <nav>
-            <ul id='nav' className='navigation'>
-              <Link to='/'>
-                <li className='top-border' onClick={this.handleMenu}>
-                  <i className='fas fa-home'></i> Home
-                </li>
-              </Link>
-              <Link to='/browse'>
-                <li onClick={this.handleMenu}>
-                  <i className='fas fa-users'></i> Browse
-                </li>
-              </Link>
-              <Link to='/signin'>
-                <li onClick={this.handleMenu}>
-                  <i className='fas fa-user'></i> Account
-                </li>
-              </Link>
-              <Link to='/chatlist/user'>
-                <li onClick={this.handleMenu}>
-                  <i className='fas fa-user'></i> Messages
-                </li>
-              </Link>
+            <ul id="nav" className="navigation">
+              <img id="sidebar-img" className="my-1" src={Profile} />
+              <span className="helper-text">
+                Llama Joe
+                <br />
+                <span className="sub-text">Da Mountains, Chile</span>
+              </span>
+              <div className="row mt-3 d-flex justify-content-center">
+                <div className="col-5 p-0">
+                  <Link to="/">
+                    <li className="" onClick={this.handleMenu}>
+                      <i className="fas fa-home"></i>
+                      <span className="w-100 d-block">Home</span>
+                    </li>
+                  </Link>
+                </div>
+                <div className="col-5 p-0">
+                  <Link to="/browse">
+                    <li onClick={this.handleMenu}>
+                      <i class="fas fa-star"></i>
+                      <span className="w-100 d-block">Favorites</span>
+                    </li>
+                  </Link>
+                </div>
+              </div>
+              <div className="row d-flex justify-content-center">
+                <div className="col-5 p-0">
+                  <Link to="/signin">
+                    <li onClick={this.handleMenu}>
+                      <i className="fas fa-user"></i>
+                      <span className="w-100 d-block">Account</span>
+                    </li>
+                  </Link>
+                </div>
+                <div className="col-5 p-0">
+                  <Link to="/chatlist/user">
+                    <li onClick={this.handleMenu}>
+                      <i class="fas fa-search"></i>
+                      <span className="w-100 d-block">Search</span>
+                    </li>
+                  </Link>
+                </div>
+              </div>
               <label
-                htmlFor='toggle-btn'
-                className='hide-menu-btn'
+                htmlFor="toggle-btn"
+                className="hide-menu-btn"
                 onClick={this.handleMenu}
               >
-                <i className='fas fa-times'></i>
+                <i className="fas fa-times"></i>
               </label>
               <button
-                id='nav-logout'
-                className='dash-btn'
-                onClick={e => this.logout(e)}
+                id="nav-logout"
+                className="dash-btn"
+                onClick={(e) => this.logout(e)}
               >
-                Logout <i className='fas fa-sign-in-alt'></i>
+                Logout <i className="fas fa-sign-in-alt"></i>
               </button>
-              <img src={Logo} id='mobile-logo' alt='Puppy Love Logo' />
+              <img src={Logo} id="mobile-logo" alt="Puppy Love Logo" />
             </ul>
-            <label htmlFor='toggle-btn' className='show-menu-btn'>
-              <i className='fas fa-bars' onClick={this.handleMenu}></i>
+            <label htmlFor="toggle-btn" className="show-menu-btn">
+              <i className="fas fa-bars" onClick={this.handleMenu}></i>
             </label>
           </nav>
         </header>
@@ -76,53 +99,74 @@ export default class Navbar extends React.Component {
     }
     return (
       <header>
-        <div className='brand-logo'>
-          <Link to='/'>
-            <img id='logo' className='brand-logo' src={Logo} alt='Brand Logo' />
+        <div className="brand-logo">
+          <Link to="/">
+            <img id="logo" className="brand-logo" src={Logo} alt="Brand Logo" />
           </Link>
         </div>
         <nav>
-          <ul id='nav' className='navigation'>
-            <Link to='/'>
-              <li className='top-border' onClick={this.handleMenu}>
-                <i className='fas fa-home'></i> Home
-              </li>
-            </Link>
-            <Link to='/browse'>
-              <li onClick={this.handleMenu}>
-                <i className='fas fa-users'></i> Browse
-              </li>
-            </Link>
-            <Link to='/signin'>
-              <li onClick={this.handleMenu}>
-                <i className='fas fa-user'></i> Account
-              </li>
-            </Link>
-            <Link to='/chatlist/user'>
-              <li onClick={this.handleMenu}>
-                <i className='fas fa-user'></i> Messages
-              </li>
-            </Link>
+          <ul id="nav" className="navigation">
+            <img id="sidebar-img" className="my-1" src={Profile} />
+            <span className="helper-text mt-0">
+              Llama Joe <br />
+              <span className="sub-text">Da Mountains, Chile</span>
+            </span>
+            <div className="row mt-3 d-flex justify-content-center">
+              <div className="col-5 p-0">
+                <Link to="/">
+                  <li className="" onClick={this.handleMenu}>
+                    <i className="fas fa-home"></i>
+                    <span className="w-100 d-block">Home</span>
+                  </li>
+                </Link>
+              </div>
+              <div className="col-5 p-0">
+                <Link to="/browse">
+                  <li onClick={this.handleMenu}>
+                    <i class="fas fa-star"></i>
+                    <span className="w-100 d-block">Favorites</span>
+                  </li>
+                </Link>
+              </div>
+            </div>
+            <div className="row d-flex justify-content-center">
+              <div className="col-5 p-0">
+                <Link to="/signin">
+                  <li onClick={this.handleMenu}>
+                    <i className="fas fa-user"></i>
+                    <span className="w-100 d-block">Account</span>
+                  </li>
+                </Link>
+              </div>
+              <div className="col-5 p-0">
+                <Link to="/chatlist/user">
+                  <li onClick={this.handleMenu}>
+                    <i class="fas fa-search"></i>
+                    <span className="w-100 d-block">Search</span>
+                  </li>
+                </Link>
+              </div>
+            </div>
             <label
-              htmlFor='toggle-btn'
-              className='hide-menu-btn'
+              htmlFor="toggle-btn"
+              className="hide-menu-btn"
               onClick={this.handleMenu}
             >
-              <i className='fas fa-times'></i>
+              <i className="fas fa-times"></i>
             </label>
-            <Link to='/signin'>
+            <Link to="/signin">
               <button
-                id='nav-logout'
+                id="nav-logout"
                 onClick={this.handleMenu}
-                className='dash-btn'
+                className="dash-btn btn submit"
               >
-                Login <i className='fas fa-sign-in-alt'></i>
+                Login <i className="fas fa-sign-in-alt"></i>
               </button>
             </Link>
           </ul>
-          <label htmlFor='toggle-btn' className='show-menu-btn'>
-            <span className='toggle-btn' onClick={this.handleMenu}>
-              <i className='fas fa-bars'></i>
+          <label htmlFor="toggle-btn" className="show-menu-btn">
+            <span className="toggle-btn" onClick={this.handleMenu}>
+              <i className="fas fa-bars"></i>
             </span>
           </label>
         </nav>

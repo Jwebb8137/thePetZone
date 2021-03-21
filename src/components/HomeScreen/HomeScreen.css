@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+span {
+  font-family: inherit;
+}
+
 .grn {
   color: #03c03c;
 }

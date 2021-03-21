@@ -8,9 +8,7 @@ const CardFeatured = (props) => {
         <u>Featured Pet</u>
         <i class="fa fa-star" aria-hidden="true"></i>
       </div>
-      <div className="pos-rel">
-        <img src={props.img} className="card-img-top" alt="..." />
-      </div>
+      <img src={props.img} className="card-img-top" alt="..." />
       <div className="card-body">
         <h5 className="card-title">Meet {props.name}!</h5>
         <p className="card-text">

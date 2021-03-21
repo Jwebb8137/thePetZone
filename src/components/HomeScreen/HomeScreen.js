@@ -26,7 +26,7 @@ const HomeScreen = () => {
         <h2>
           Helping To Find Their
           <br />
-          <span className="green">Furever</span> Homes{" "}
+          Furever Homes{" "}
         </h2>
       </div>
       <Carousel />

@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import SearchForm from "../SearchForm/SearchForm";
 import CardFeatured from "../Cards/CardFeatured";
-import Card from "../Cards/Card";
+import Cards from "../Cards/Cards";
 import "./FavoritesScreen.css";
 import Img1 from "../../assets/card1.jpg";
 import Img2 from "../../assets/card2.jpg";
@@ -17,9 +17,9 @@ const FavoritesScreen = () => {
           Furever Friend?
         </h2> */}
         <div className="card-group">
-          <Card img={Img1} name="Sasha" />
-          <Card img={Img2} name="Marvin" />
-          <Card img={Img3} name="Bates and Oscar" />
+          <Cards img={Img1} name="Sasha" />
+          <Cards img={Img2} name="Marvin" />
+          <Cards img={Img3} name="Bates and Oscar" />
         </div>
       </div>
     </Fragment>

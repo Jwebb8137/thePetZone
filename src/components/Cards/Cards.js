@@ -3,11 +3,9 @@ import "./Card.css";
 
 const Card = (props) => {
   const [fill, setFill] = useState("far");
-
   const setFillLike = () => {
     fill === "far" ? setFill("fa") : setFill("far");
   };
-
   return (
     <div className="card my-3 mx-2 pt-0">
       <i
