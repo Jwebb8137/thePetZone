@@ -8,7 +8,7 @@ const Signin = () => {
     <Fragment>
       <div id="signin-container" className="container fade-in p-0">
         <h3 className="my-3">Already Have An Account?</h3>
-        <form id="homepage-search" className="m-0 px-3">
+        <form className="homepage-search m-0 px-3">
           <div class="form-floating mb-3">
             <input
               type="email"
@@ -33,9 +33,11 @@ const Signin = () => {
             Sign In <i class="fas fa-caret-right"></i>
           </button>
           <div class="form-text my-2">Or</div>
-          <button type="button" class="btn btn-grey btn-lg btn-block w-75">
-            Signup <i class="fas fa-caret-right"></i>
-          </button>
+          <Link to="/Signup">
+            <button type="button" class="btn btn-grey btn-lg btn-block w-75">
+              Signup <i class="fas fa-caret-right"></i>
+            </button>
+          </Link>
           <img src={FormBg} />
         </form>
       </div>

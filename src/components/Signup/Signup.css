@@ -1,0 +1,79 @@
+#signup-container label {
+  font-family: "Roboto";
+  font-size: 0.95rem;
+  font-weight: 400;
+  left: 2px;
+  position: absolute;
+  top: 0;
+}
+
+#signup-container select {
+  font-size: 0.95rem;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+select option {
+  font-family: "Roboto";
+  font-size: 1.25rem;
+}
+
+.tooltip-text {
+  background: #d2fdcb !important;
+  border: 2px solid #03c03c !important;
+  border-radius: 10px !important;
+  color: #000 !important;
+  font-family: "Fredoka One" !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  text-align: left !important;
+  left: 5% !important;
+  opacity: 0.9 !important;
+  padding: 15px 15px 0 !important;
+  margin: 5px auto !important;
+  width: 90%;
+}
+
+.tooltip-text .fa-circle {
+  font-size: 0.75rem;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.text-align-left {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-left: 28px;
+  text-align: left;
+  text-decoration: underline;
+}
+
+option:hover {
+  background: #d2fdcb;
+}
+
+.homepage-search input,
+.homepage-search select {
+  padding: 10px 15px 10px;
+}
+
+#signup-container input {
+  padding-left: 1.25rem;
+  height: 3.5rem;
+}
+
+.form-select:focus {
+  border-color: #03c03c;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #03c03c;
+}
+
+#signup-container .btn {
+  font-family: "Fredoka One";
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
