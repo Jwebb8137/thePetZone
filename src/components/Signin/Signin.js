@@ -30,7 +30,7 @@ const Signin = () => {
             <div class="form-text mt-2 mx-3">Forgot Password?</div>
           </div>
           <button type="submit" class="btn btn-grn btn-lg btn-block w-75 mt-3">
-            Sign In <i class="fas fa-caret-right"></i>
+            Sign in <i class="fas fa-caret-right"></i>
           </button>
           <div class="form-text my-2">Or</div>
           <Link to="/Signup">

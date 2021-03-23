@@ -1,0 +1,41 @@
+#pet-profile-img {
+  border: 1px solid #0dab3f;
+  border-radius: 50%;
+  position: absolute;
+  left: 30%;
+  bottom: -22.5%;
+  width: 40%;
+}
+#pet-profile-cover {
+  border-bottom: 1px solid #393d42;
+  border-top: 1px solid #393d42;
+}
+
+#cover-upload-icon {
+  bottom: 15px;
+  font-size: 1.75rem;
+  position: absolute;
+  right: 25px;
+}
+
+.btn-profile {
+  background: #fff;
+  border: 2px solid #393d42;
+  border-radius: 30px;
+  color: #393d42;
+  font-family: "Sniglet";
+  font-size: 1rem;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.slider-img {
+  border-radius: 10px;
+}

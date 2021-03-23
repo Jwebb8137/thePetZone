@@ -58,7 +58,7 @@ a {
 
 nav span {
   color: #fdf9f4;
-  font-family: "Fredoka One";
+  font-family: "Sniglet", cursive;
   font-size: 1.25rem;
   margin-top: 6px;
   text-decoration: none;
@@ -92,7 +92,7 @@ nav span {
 }
 
 .toggle-btn {
-  background-color: #03c03c;
+  background-color: #0dab3f;
   border-radius: 50%;
   color: #fff;
   display: block;
@@ -121,6 +121,7 @@ a:hover {
 
 #nav-logout {
   background: #fdf9f4;
+  font-family: "Sniglet", cursive;
   font-size: 1rem;
   position: absolute;
   top: 14px;

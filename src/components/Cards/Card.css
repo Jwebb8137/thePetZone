@@ -12,13 +12,13 @@
 }
 
 .card .btn {
-  font-family: "Fredoka One";
+  font-family: "Sniglet", cursive;
   font-size: 1.15rem;
   font-weight: 500;
 }
 
 .card-header {
-  font-family: "Fredoka One";
+  font-family: "Sniglet", cursive;
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   font-size: 1.25rem;
@@ -29,7 +29,7 @@
 
 u,
 .card-title strong {
-  font-family: "Fredoka One";
+  font-family: "Sniglet", cursive;
   font-weight: 500;
 }
 

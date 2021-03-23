@@ -25,7 +25,7 @@ select option {
   border: 2px solid #03c03c !important;
   border-radius: 10px !important;
   color: #000 !important;
-  font-family: "Fredoka One" !important;
+  font-family: "Sniglet", cursive !important;
   font-size: 0.95rem !important;
   font-weight: 600 !important;
   text-align: left !important;
@@ -71,7 +71,7 @@ option:hover {
 }
 
 #signup-container .btn {
-  font-family: "Fredoka One";
+  font-family: "Sniglet", cursive;
   font-weight: 400;
   letter-spacing: 1px;
   padding: 10px 20px;

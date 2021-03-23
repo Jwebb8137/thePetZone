@@ -48,7 +48,7 @@ export default class Navbar extends React.Component {
                   </Link>
                 </div>
                 <div className="col-5 p-0">
-                  <Link to="/browse">
+                  <Link to="/Favorites">
                     <li onClick={this.handleMenu}>
                       <i class="fas fa-star"></i>
                       <span className="w-100 d-block">Favorites</span>
@@ -58,7 +58,7 @@ export default class Navbar extends React.Component {
               </div>
               <div className="row d-flex justify-content-center">
                 <div className="col-5 p-0">
-                  <Link to="/signin">
+                  <Link to="/Signin">
                     <li onClick={this.handleMenu}>
                       <i className="fas fa-user"></i>
                       <span className="w-100 d-block">Account</span>
@@ -66,7 +66,7 @@ export default class Navbar extends React.Component {
                   </Link>
                 </div>
                 <div className="col-5 p-0">
-                  <Link to="/chatlist/user">
+                  <Link to="/Search">
                     <li onClick={this.handleMenu}>
                       <i class="fas fa-search"></i>
                       <span className="w-100 d-block">Search</span>
@@ -121,7 +121,7 @@ export default class Navbar extends React.Component {
                 </Link>
               </div>
               <div className="col-5 p-0">
-                <Link to="/browse">
+                <Link to="/Favorites">
                   <li onClick={this.handleMenu}>
                     <i class="fas fa-star"></i>
                     <span className="w-100 d-block">Favorites</span>
@@ -131,7 +131,7 @@ export default class Navbar extends React.Component {
             </div>
             <div className="row d-flex justify-content-center">
               <div className="col-5 p-0">
-                <Link to="/signin">
+                <Link to="/Signin">
                   <li onClick={this.handleMenu}>
                     <i className="fas fa-user"></i>
                     <span className="w-100 d-block">Account</span>
@@ -139,7 +139,7 @@ export default class Navbar extends React.Component {
                 </Link>
               </div>
               <div className="col-5 p-0">
-                <Link to="/chatlist/user">
+                <Link to="/Search">
                   <li onClick={this.handleMenu}>
                     <i class="fas fa-search"></i>
                     <span className="w-100 d-block">Search</span>

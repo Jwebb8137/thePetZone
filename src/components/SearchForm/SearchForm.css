@@ -17,7 +17,7 @@
 .submit {
   background: #d2fdcb;
   font-size: 1.25rem;
-  font-family: "Fredoka One";
+  font-family: "Sniglet", cursive;
   border: 2px solid #03c03c;
   padding: 10px 20px;
   border-radius: 30px;
@@ -88,7 +88,7 @@ col {
 
 .txt-lg {
   font-size: 2rem;
-  font-family: "Ranchers", cursive;
+  font-family: "Sniglet", cursive;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: 0.05em;

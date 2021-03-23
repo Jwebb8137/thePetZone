@@ -2,6 +2,11 @@
   width: 100%;
 }
 
+.video-full:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 span {
   font-family: inherit;
 }
@@ -12,13 +17,34 @@ span {
 
 .main-heading,
 .sub-heading {
-  font-family: "Fredoka One";
+  font-family: "Sniglet", cursive;
   font-size: 1.85rem;
+  font-weight: 600;
 }
 
 .display-heading {
-  font-family: "Fredoka One";
+  font-family: "Sniglet", cursive;
   font-size: 1.85rem;
+  font-weight: 600;
+}
+
+.home-p {
+  font-family: "Sniglet", cursive;
+  font-size: 1.2rem;
+}
+
+.r-50 {
+  border-radius: 50%;
+}
+
+.neg-margin-5 {
+  margin-bottom: -2rem;
+  margin-top: 2rem;
+  text-decoration: underline;
+}
+
+h2 {
+  font-weight: 600;
 }
 
 .container {
@@ -35,7 +61,7 @@ span {
   background: #03c03c;
   border: 2px solid #d2fdcb;
   color: #fff;
-  font-family: "Fredoka One";
+  font-family: "Sniglet", cursive;
   letter-spacing: 1px;
 }
 
