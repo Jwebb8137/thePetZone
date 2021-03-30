@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Card.css";
 
-const Card = (props) => {
+const Cards = (props) => {
   const [fill, setFill] = useState("far");
   const setFillLike = () => {
     fill === "far" ? setFill("fa") : setFill("far");
@@ -22,13 +23,13 @@ const Card = (props) => {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </p>
-        <a href="#" className="btn bg-grn w-75">
+        <Link to="/PetProfile/Dog" className="btn bg-grn w-75">
           More Info <i className="fa fa-caret-right" aria-hidden="true"></i>
-        </a>
+        </Link>
       </div>
       <div className="card-footer text-muted">2 days ago</div>
     </div>
   );
 };
 
-export default Card;
+export default Cards;

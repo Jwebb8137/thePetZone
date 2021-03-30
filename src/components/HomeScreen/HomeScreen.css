@@ -1,5 +1,7 @@
 .video-full {
-  width: 100%;
+  background: #90ee90;
+  max-height: 100vh;
+  width: 100vw;
 }
 
 .video-full:hover {
@@ -13,6 +15,10 @@ span {
 
 .grn {
   color: #03c03c;
+}
+
+.w-view {
+  width: 100vw;
 }
 
 .main-heading,
@@ -49,6 +55,42 @@ h2 {
 
 .container {
   position: relative;
+  text-align: center;
+  min-width: 100vw;
+}
+
+.home-scrolling-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.slider-right-end {
+  font-size: 1.5rem;
+  padding-right: 2rem;
+}
+
+.slider-right-end i {
+  font-size: 3rem;
+}
+
+.btn,
+.submit,
+button {
+  max-width: 400px;
+}
+
+.btn-alt {
+  background: #fff;
+  border: 2px solid #212529;
+}
+
+.fa-arrow-circle-right {
+  margin-left: 3px;
+}
+
+.lrg-img {
+  max-width: 400px;
 }
 
 .display-paw {
@@ -92,5 +134,33 @@ h2 {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-scrolling-wrapper {
+    margin: 1rem;
+  }
+
+  .display-heading {
+    font-size: 5rem;
+  }
+  .sub-heading {
+    font-size: 2.75rem;
+  }
+  #display-search {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  .lg-paw {
+    font-size: 5rem;
+  }
+  .home-p {
+    font-size: 1.65rem;
+  }
+  .btn-alt {
+    font-size: 1.5rem;
   }
 }

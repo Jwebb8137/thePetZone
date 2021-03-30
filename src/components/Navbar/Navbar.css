@@ -120,7 +120,7 @@ a:hover {
 }
 
 #nav-logout {
-  background: #fdf9f4;
+  background: #4ee27b;
   font-family: "Sniglet", cursive;
   font-size: 1rem;
   position: absolute;
@@ -162,8 +162,8 @@ a:hover {
   }
 
   .hide-menu-btn {
-    background-color: #fdf9f4;
-    border: 2px solid #4ee27b;
+    background-color: #4ee27b;
+    border: 2px solid #3fa35e;
     position: absolute;
     top: 18px;
     padding: 0px 12px;
@@ -231,5 +231,11 @@ a:hover {
 @media (min-width: 1024px) {
   .navigation li {
     font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
   }
 }

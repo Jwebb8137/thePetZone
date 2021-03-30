@@ -77,3 +77,16 @@ option:hover {
   padding: 10px 20px;
   border-radius: 30px;
 }
+
+input:-internal-autofill-selected {
+  background: #000 !important;
+}
+
+@media (min-width: 768px) {
+  #signup-container h3 {
+    font-size: 3rem;
+  }
+  #signin-container h3 {
+    font-size: 2.25rem;
+  }
+}

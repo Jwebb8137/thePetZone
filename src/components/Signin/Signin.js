@@ -8,13 +8,13 @@ const Signin = () => {
     <Fragment>
       <div id="signin-container" className="container fade-in p-0">
         <h3 className="my-3">Already Have An Account?</h3>
-        <form className="homepage-search m-0 px-3">
+        <form className="homepage-search px-3">
           <div class="form-floating mb-3">
             <input
-              type="email"
               class="form-control"
               id="floatingInput"
-              placeholder="name@example.com"
+              placeholder="User1"
+              required
             />
             <label for="floatingInput">Username</label>
             <div class="form-text mt-2 mx-3">Forgot Username?</div>
@@ -25,6 +25,7 @@ const Signin = () => {
               class="form-control"
               id="floatingPassword"
               placeholder="Password"
+              required
             />
             <label for="floatingPassword">Password</label>
             <div class="form-text mt-2 mx-3">Forgot Password?</div>
@@ -35,7 +36,7 @@ const Signin = () => {
           <div class="form-text my-2">Or</div>
           <Link to="/Signup">
             <button type="button" class="btn btn-grey btn-lg btn-block w-75">
-              Signup <i class="fas fa-caret-right"></i>
+              Sign up <i class="fas fa-caret-right"></i>
             </button>
           </Link>
           <img src={FormBg} />

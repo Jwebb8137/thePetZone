@@ -13,10 +13,8 @@ const SearchScreen = () => {
     <Fragment>
       <div className="w-100 container fade-in px-0 bg-light-grn pt-2">
         <SearchForm />
-        <div className="container">
-          <CardFeatured img={Img4} name="Cheeto" />
-        </div>
         <div className="card-group">
+          <CardFeatured img={Img4} name="Cheeto" />
           <Cards img={Img1} name="Sasha" />
           <Cards img={Img2} name="Marvin" />
           <Cards img={Img3} name="Bates and Oscar" />

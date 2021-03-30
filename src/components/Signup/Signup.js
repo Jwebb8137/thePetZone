@@ -27,7 +27,7 @@ const Signup = () => {
           Let's Get Started <i class="fas fa-paw grn"></i>
         </h3>
         <p className="m-0">All we need is some quick info and you're all set</p>
-        <form className="homepage-search m-0 px-3">
+        <form className="homepage-search px-3">
           <div class="row mb-2 py-3 d-flex justify-content-center">
             <div class="col-12 tooltip-container">
               <select
@@ -58,6 +58,36 @@ const Signup = () => {
                   placeholder="user123"
                 />
                 <label for="floatingInput">Enter Username</label>
+              </div>
+            </div>
+            <div className="col-12">
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  id="inputPassword5"
+                  class="form-control"
+                  placeholder="password123"
+                  aria-describedby="passwordHelpBlock"
+                />
+                <label for="floatingInput">Enter Password</label>
+                <small
+                  id="passwordHelpBlock"
+                  class="form-text text-muted d-block mb-3"
+                >
+                  Your password must be 8-20 characters long, contain letters
+                  and numbers, and must not contain spaces, special characters,
+                  or emoji.
+                </small>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  id="inputPassword5"
+                  class="form-control"
+                  placeholder="password123"
+                  aria-describedby="passwordHelpBlock"
+                />
+                <label for="floatingInput">Re-enter Password</label>
               </div>
             </div>
             <div class="col-6">

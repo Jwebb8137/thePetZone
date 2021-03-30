@@ -8,6 +8,9 @@
 }
 
 .card {
+  margin: auto;
+  min-width: 225px;
+  max-width: 400px;
   position: relative;
 }
 
@@ -19,9 +22,9 @@
 
 .card-header {
   font-family: "Sniglet", cursive;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.25rem;
   margin-bottom: 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
   background-color: rgb(253 249 244);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);

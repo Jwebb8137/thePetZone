@@ -13,7 +13,7 @@ import SliderImg5 from "../../assets/pet-slider-1.jpg";
 const PetProfile = () => {
   return (
     <Fragment>
-      <div className="container p-0">
+      <div id="pet-profile-container" className="container p-0">
         <div className="row">
           <div className="col-12 container p-0">
             <video
@@ -31,7 +31,10 @@ const PetProfile = () => {
             <img id="pet-profile-img" src={PetProfileImg} className="" />
           </div>
         </div>
-        <div className="row pt-5 px-2 mb-0 d-flex justify-content-center">
+        <div
+          id="profile-heading"
+          className="row mb-0 d-flex justify-content-center"
+        >
           <div className="col-12 mt-3">
             <h2 className="mb-1">Cheetoh</h2>
             <p className="px-3 mb-3">
@@ -39,15 +42,16 @@ const PetProfile = () => {
               to call home!
             </p>
           </div>
-          <div className="col-5 p-0">
-            <button className="btn btn-success btn-profile">
+          <div className="col-12 p-0">
+            <button className="btn btn-success btn-profile m-2 mt-0">
               <i class="fas fa-phone-volume"></i> 919-536-1234
             </button>
-          </div>
-          <div className="col-5 p-0">
-            <button className="btn btn-success btn-profile">
+            <Link
+              to="/Chat/ChatRoom"
+              className="btn btn-success btn-profile m-2 mt-0"
+            >
               <i class="fas fa-laptop"></i> Virtual Visit
-            </button>
+            </Link>
           </div>
         </div>
         <div className="scrolling-wrapper my-3">

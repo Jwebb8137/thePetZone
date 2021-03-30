@@ -2,7 +2,8 @@
   background: #f7f7f7;
   border-radius: 13px 13px 0 0;
   font-family: "Raleway";
-  margin: 0.5rem;
+  margin: 0.5rem auto;
+  max-width: 600px;
   padding: 0;
 }
 
@@ -100,4 +101,17 @@ col {
 
 .d-block {
   display: block;
+}
+
+#search-form .container {
+  min-width: auto;
+}
+
+@media (min-width: 768px) {
+  #search-form p {
+    font-size: 1.5rem;
+  }
+  #search-form p span {
+    font-size: 2.5rem;
+  }
 }

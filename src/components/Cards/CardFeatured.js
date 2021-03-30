@@ -2,8 +2,8 @@ import React from "react";
 
 const CardFeatured = (props) => {
   return (
-    <div className="card text-center mt-3 mb-3">
-      <div className="card-header pt-3">
+    <div className="card text-center my-3 mx-2">
+      <div className="card-header pt-3 px-0">
         <i class="fa fa-star" aria-hidden="true"></i>
         <u>Featured Pet</u>
         <i class="fa fa-star" aria-hidden="true"></i>

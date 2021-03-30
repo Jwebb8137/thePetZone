@@ -2,6 +2,10 @@
   font-family: "Raleway", sans-serif;
 }
 
+.carousel-fade .carousel-item {
+  max-height: 75vh;
+}
+
 .carousel-inner {
   background: #168a39;
 }

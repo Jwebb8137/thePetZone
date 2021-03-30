@@ -3,12 +3,21 @@
   border-radius: 50%;
   position: absolute;
   left: 30%;
-  bottom: -22.5%;
+  bottom: -15%;
   width: 40%;
 }
 #pet-profile-cover {
   border-bottom: 1px solid #393d42;
   border-top: 1px solid #393d42;
+}
+
+#profile-heading {
+  font-size: 1.2rem;
+  margin-top: 7%;
+}
+
+#profile-heading h2 {
+  font-size: 2.25rem;
 }
 
 #cover-upload-icon {
@@ -38,4 +47,50 @@
 
 .slider-img {
   border-radius: 10px;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+@media (min-width: 768px) {
+  #profile-heading {
+    margin-top: 5%;
+  }
+  #pet-profile-img {
+    bottom: -8%;
+    left: 32.5%;
+    width: 35%;
+  }
+  #pet-profile-container p {
+    font-size: 1.25rem;
+    margin: auto;
+    max-width: 600px;
+  }
+  #pet-profile-container button,
+  #pet-profile-container a {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1028px) {
+  #profile-heading {
+    margin-top: 7%;
+  }
+  #cover-upload-icon {
+    font-size: 2.5rem;
+    right: 3vw;
+  }
+  #pet-profile-img {
+    bottom: -15%;
+    left: 37.5%;
+    width: 25%;
+  }
+  #pet-profile-cover {
+    height: 75vh;
+  }
+}
+
+@media (min-width: 1440px) {
+  #profile-heading {
+    margin-top: 5%;
+  }
 }

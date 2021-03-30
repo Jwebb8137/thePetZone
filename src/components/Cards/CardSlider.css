@@ -1,0 +1,18 @@
+.scrolling-wrapper .card-slider {
+  border: 1px solid #393d42;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 2rem;
+  max-width: 500px;
+}
+.card-slider img {
+  border-radius: 10px 10px 0 0;
+  height: 100%;
+  max-height: 250px;
+  width: 100%;
+}
+
+.scrolling-wrapper .card-title {
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+}
