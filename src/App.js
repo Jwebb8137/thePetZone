@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import HomeScreen from "./components/HomeScreen/HomeScreen";
 import Signin from "./components/Signin/Signin";
 import Signup from "./components/Signup/Signup";
+import Account from "./components/Account/Account";
 import VideoChat from "./components/VideoChat/VideoChat";
 import PetProfile from "./components/PetProfile/PetProfile";
 import FavoritesScreen from "./components/FavoritesScreen/FavoritesScreen";
@@ -17,6 +18,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Switch>
+          <Route exact path="/Account" component={Account} />
           <Route exact path="/Signin" component={Signin} />
           <Route exact path="/Signup" component={Signup} />
           <Route exact path="/Favorites" component={FavoritesScreen} />

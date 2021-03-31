@@ -1,0 +1,42 @@
+.nav-pills .nav-link.active {
+  background: none;
+  color: #393d42;
+  font-family: "Sniglet", cursive;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transform: scale(1.15);
+  transition: 0.5s;
+}
+
+#pills-tab {
+  background: #fff;
+  border-radius: 0;
+}
+
+#pills-tab .nav-link {
+  font-size: 1.25rem;
+}
+
+.list-group-item {
+  text-align: left;
+  font-family: "Sniglet";
+}
+
+.list-group-item .badge {
+  color: #393d42;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+.tab-content {
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+}
+
+.tab-content .btn-outline-dark {
+  border-color: #393d42;
+  border-radius: 30px;
+  color: #393d42;
+  font-family: "Sniglet", cursive;
+  font-size: 1.25rem;
+}

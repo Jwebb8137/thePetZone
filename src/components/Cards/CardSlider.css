@@ -3,7 +3,7 @@
   border-radius: 10px;
   display: inline-block;
   margin-right: 2rem;
-  max-width: 500px;
+  max-width: 300px;
 }
 .card-slider img {
   border-radius: 10px 10px 0 0;
@@ -15,4 +15,65 @@
 .scrolling-wrapper .card-title {
   background: #fff;
   border-radius: 0 0 10px 10px;
+}
+
+#slider-reactivate {
+  background: #95ff80bf;
+  border-radius: 10px 10px 0 0;
+  font-family: "Sniglet";
+  font-size: 1.25rem;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#slider-reactivate:hover {
+  background: #95ff80bf;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+#slider-delete {
+  background: #f66a6abf;
+  border-radius: 10px 10px 0 0;
+  font-family: "Sniglet";
+  font-size: 1.25rem;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#slider-delete:hover {
+  background: #f66a6a;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+#slider-edit {
+  background: #95ff80bf;
+  border-radius: 0 0 10px 10px;
+  font-family: "Sniglet";
+  font-size: 1.25rem;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#slider-edit:hover {
+  background: #95ff80;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+@media (min-width: 1028px) {
+  .scrolling-wrapper .card-slider {
+    max-width: 275px;
+  }
 }

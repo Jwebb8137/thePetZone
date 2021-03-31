@@ -23,7 +23,7 @@ const Cards = (props) => {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </p>
-        <Link to="/PetProfile/Dog" className="btn bg-grn w-75">
+        <Link to="/PetProfile/Cat" className="btn bg-grn w-75">
           More Info <i className="fa fa-caret-right" aria-hidden="true"></i>
         </Link>
       </div>

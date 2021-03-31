@@ -8,7 +8,7 @@ const Carousel = () => {
   return (
     <div
       id="carouselExampleCaptions"
-      class="carousel slide my-4 carousel-fade container-fluid"
+      class="carousel slide p-0 my-4 carousel-fade container-fluid"
       data-bs-ride="carousel"
     >
       <div class="carousel-indicators">

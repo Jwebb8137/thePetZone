@@ -10,10 +10,20 @@
   font-family: "Raleway", sans-serif;
   font-size: 1.75rem;
   font-weight: 600;
-  padding: 0.25rem 2rem;
+  padding: 0.25rem 1.65rem;
 }
 
 #bottom-nav .bottom-nav-active {
   background: #9c9c9c;
   color: #e5fee1;
+}
+
+@media (min-width: 375px) {
+  #bottom-nav a {
+    color: #03c03c;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    padding: 0.25rem 2.1rem;
+  }
 }

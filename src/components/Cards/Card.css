@@ -24,7 +24,7 @@
   font-family: "Sniglet", cursive;
   padding: 0.5rem 0.25rem;
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   background-color: rgb(253 249 244);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
@@ -54,4 +54,10 @@ u,
   right: 5px;
   color: #05bf3c;
   font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .card-header {
+    font-size: 1.2rem;
+  }
 }
