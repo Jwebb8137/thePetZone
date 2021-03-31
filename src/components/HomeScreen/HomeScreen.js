@@ -29,6 +29,7 @@ export default class HomeScreen extends Component {
     this.setState({
       loading: false,
     });
+    window.scrollTo(0, 0);
   }
   render() {
     if (this.state.loading) {

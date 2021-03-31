@@ -1,6 +1,6 @@
 .homepage-search {
   background: #f7f7f7;
-  border-radius: 13px 13px 0 0;
+  border-radius: 0 0 13px 13px;
   font-family: "Raleway";
   margin: 0.5rem auto;
   max-width: 600px;
@@ -35,11 +35,29 @@
   padding: 0;
 }
 
+#search-form .nav-item .active i {
+  color: #16af3d;
+  text-decoration: underline;
+  transform: scale(1.25);
+}
+
+#search-form img {
+  border-radius: 0 0 13px 13px;
+}
+
+.nav-pills .nav-link.active {
+  text-decoration: underline;
+}
+
 #search-nav a {
   color: #f7f7f7;
   font-size: 1.75rem;
   font-weight: 600;
   padding: 0.75rem 2.5rem;
+}
+
+#search-form .nav {
+  border-radius: 13px 13px 0 0;
 }
 
 #search-nav .form-active {
@@ -105,6 +123,19 @@ col {
 
 #search-form .container {
   min-width: auto;
+}
+
+#search-form .nav-link {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.nav-justified .nav-item {
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
