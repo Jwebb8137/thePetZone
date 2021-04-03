@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
+import ReactPlaceholder from "react-placeholder";
+import "react-placeholder/lib/reactPlaceholder.css";
 import ContextComponent from "../ContextComponent/ContextComponent";
 import ButtonSlider from "../Buttons/ButtonSlider";
 import Carousel from "../Carousel/Carousel";
@@ -21,20 +23,10 @@ import HomeSliderImg10 from "../../assets/home-slider-dog-4.jpg";
 import "./HomeScreen.css";
 
 export default class HomeScreen extends Component {
-  state = {
-    loading: true,
-  };
-
   componentDidMount() {
-    this.setState({
-      loading: false,
-    });
     window.scrollTo(0, 0);
   }
   render() {
-    if (this.state.loading) {
-      return <Spinner />;
-    }
     return (
       <Fragment>
         <div className="container fade-in p-0 m-0">

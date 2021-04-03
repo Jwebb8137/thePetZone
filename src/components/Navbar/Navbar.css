@@ -46,7 +46,7 @@ header {
   color: #000;
   font-family: "Grandstander", cursive;
   font-size: 1.5em;
-  padding: 20px 0;
+  padding: 18px 0;
   text-align: center;
   display: block;
   text-decoration: none;
@@ -59,7 +59,7 @@ a {
 nav span {
   color: #fdf9f4;
   font-family: "Sniglet", cursive;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-top: 6px;
   text-decoration: none;
   font-weight: 400;
@@ -69,7 +69,7 @@ nav span {
 .show-menu-btn,
 .hide-menu-btn {
   transition: 0.4s;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   cursor: pointer;
   display: none;
 }
@@ -109,7 +109,7 @@ a:hover {
 }
 
 .navigation li i {
-  font-size: 3.5rem;
+  font-size: 3.25rem;
   color: #4ee27b;
 }
 
@@ -121,11 +121,14 @@ a:hover {
 
 #nav-logout {
   background: #4ee27b;
+  border: none;
   font-family: "Sniglet", cursive;
   font-size: 1rem;
+  font-weight: 600;
   position: absolute;
   top: 14px;
   left: 10px;
+  padding: 7px 18px;
 }
 
 /*-- Responsive CSS --*/

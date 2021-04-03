@@ -48,9 +48,8 @@ u,
   transition: 0.5s;
 }
 
-.card-footer {
-  background: #a0f7a3;
-  border-radius: 0 0 10px 10px !important;
+.card {
+  border-radius: 10px !important;
 }
 
 .card-favorited {

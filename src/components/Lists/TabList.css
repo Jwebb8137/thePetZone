@@ -34,9 +34,14 @@
 }
 
 .tab-content .btn-outline-dark {
+  background: #fff;
   border-color: #393d42;
   border-radius: 30px;
   color: #393d42;
   font-family: "Sniglet", cursive;
   font-size: 1.25rem;
+}
+
+.btn-outline-dark:hover {
+  background: #ffffff50;
 }

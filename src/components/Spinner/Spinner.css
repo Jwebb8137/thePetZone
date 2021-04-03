@@ -1,8 +1,15 @@
-.spinner-grow {
-  width: 3rem;
-  height: 3rem;
+.spinner-border {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  vertical-align: text-bottom;
+  border: 0.5em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: 0.75s linear infinite spinner-border;
+  animation: 1s linear infinite spinner-border;
 }
 
 .text-grn {
-  color: #0dab3f;
+  color: #03c03c;
 }

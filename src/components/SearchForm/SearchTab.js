@@ -1,13 +1,14 @@
 import React, { Fragment } from "react";
-import FormBg from "../../assets/form-bg.png";
+import "./SearchTab.css";
 
 const SearchTab = (props) => {
   return (
     <Fragment>
       <form id="search-form" class="homepage-search mt-0">
         <div className="container px-2 pt-1">
-          <p className="mt-3 txt-md px-3">
+          <p className="mt-0 txt-md px-3">
             <span className="txt-lg d-block">{props.text}</span>
+            <span className="d-block sub-text-form">{props.subtext}</span>
           </p>
           <div class="mt-3 mb-3 label-container">
             <label for="locationSearch" class="form-label">
@@ -54,7 +55,7 @@ const SearchTab = (props) => {
             Start Looking <i class="fas fa-caret-right"></i>
           </button>
         </div>
-        <img src={FormBg} />
+        <img src={props.img} className="mt-3" />
       </form>
     </Fragment>
   );

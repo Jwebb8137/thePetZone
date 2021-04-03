@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import LoadingIcon from "../../assets/loading.png";
 import "./Spinner.css";
 
 const Spinner = () => {
@@ -6,14 +7,10 @@ const Spinner = () => {
     <Fragment>
       <div className="container pt-5">
         <div className="row d-flex justify-content-center">
-          <div className="spinner-grow text-grn" role="status">
-            <span className="sr-only">Loading...</span>
-          </div>
-          <div className="spinner-grow mx-3" role="status">
-            <span className="sr-only">Loading...</span>
-          </div>
-          <div className="spinner-grow text-grn" role="status">
-            <span className="sr-only">Loading...</span>
+          <div className="col-12">
+            <div class="spinner-border text-grn" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
           </div>
         </div>
       </div>

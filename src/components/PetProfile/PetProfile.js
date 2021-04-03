@@ -11,6 +11,10 @@ import SliderImg4 from "../../assets/pet-slider-2.jpg";
 import SliderImg5 from "../../assets/pet-slider-1.jpg";
 
 const PetProfile = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Fragment>
       <div id="pet-profile-container" className="container p-0">

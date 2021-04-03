@@ -1,5 +1,8 @@
 import React, { Fragment, useEffect } from "react";
 import SearchTab from "./SearchTab";
+import CatFormImg from "../../assets/cat-form.png";
+import DogFormImg from "../../assets/dog-form.png";
+import ShelterFormImg from "../../assets/shelter-form.png";
 import "./SearchForm.css";
 
 const SearchForm = () => {
@@ -61,7 +64,11 @@ const SearchForm = () => {
             role="tabpanel"
             aria-labelledby="pills-home-tab"
           >
-            <SearchTab text={"Cats, cats, cats!"} />
+            <SearchTab
+              text={"Cats, cats, cats!"}
+              subtext={"They can't wait to meet you"}
+              img={CatFormImg}
+            />
           </div>
           <div
             class="tab-pane fade"
@@ -69,7 +76,11 @@ const SearchForm = () => {
             role="tabpanel"
             aria-labelledby="pills-profile-tab"
           >
-            <SearchTab text={"Dogs, dogs, dogs!"} />
+            <SearchTab
+              text={"Dogs, dogs, dogs!"}
+              subtext={"They can't wait to meet you!"}
+              img={DogFormImg}
+            />{" "}
           </div>
           <div
             class="tab-pane fade"
@@ -77,7 +88,11 @@ const SearchForm = () => {
             role="tabpanel"
             aria-labelledby="pills-contact-tab"
           >
-            <SearchTab text={"Shelters are here!"} />
+            <SearchTab
+              text={"Shelters are here!"}
+              subtext={"They can't wait to see you"}
+              img={ShelterFormImg}
+            />
           </div>
         </div>
       </div>

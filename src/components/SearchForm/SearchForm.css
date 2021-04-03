@@ -28,6 +28,11 @@
   width: 85%;
 }
 
+.form-sub-title {
+  font-size: 0.75rem;
+  text-decoration: none !important;
+}
+
 #search-nav {
   background: #393d42;
   border-radius: 10px 10px 0 0;
@@ -35,8 +40,13 @@
   padding: 0;
 }
 
+#search-form .nav-item i {
+  color: #393d42;
+  width: 40px;
+}
+
 #search-form .nav-item .active i {
-  color: #16af3d;
+  color: #3adc6b;
   text-decoration: underline;
   transform: scale(1.25);
 }
@@ -57,6 +67,7 @@
 }
 
 #search-form .nav {
+  border-top: 30px solid #393d42;
   border-radius: 13px 13px 0 0;
 }
 

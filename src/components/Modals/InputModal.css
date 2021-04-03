@@ -1,0 +1,29 @@
+.input-modal {
+  padding: 0;
+}
+
+.input-modal .modal-body {
+  padding: 0;
+}
+
+.input-align {
+  text-align: left;
+}
+
+.btn-outline-input {
+  border: 1px solid #393d42;
+  color: #393d42;
+}
+
+#inputModal .modal-content {
+  box-shadow: 0 0 5px -2px #03c03c;
+}
+
+#inputModal label,
+#inputModal button {
+  font-family: "Sniglet";
+}
+
+#inputModal input {
+  font-family: "Roboto";
+}

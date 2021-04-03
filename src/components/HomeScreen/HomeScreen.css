@@ -121,6 +121,10 @@ button {
   opacity: 1;
 }
 
+.min-100-vw {
+  min-height: 100vh;
+}
+
 .fade-in-1 {
   animation: fadeIn ease 4s;
   color: #393d42;
