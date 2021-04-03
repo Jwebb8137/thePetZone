@@ -9,7 +9,7 @@ import Img3 from "../../assets/card3.jpg";
 
 const FavoritesScreen = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    document.querySelector("body").scrollTo(0, 0);
   }, []);
 
   return (

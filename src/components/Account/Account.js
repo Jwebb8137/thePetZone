@@ -1,10 +1,14 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import { Link } from "react-router-dom";
 import TabList from "../Lists/TabList";
 import "./Account.css";
 import ProfileImg from "../../assets/profile-main.jpg";
 
 const Account = () => {
+  useEffect(() => {
+    document.querySelector("body").scrollTo(0, 0);
+  }, []);
+
   return (
     <Fragment>
       <div id="account-detail" className="container pt-3">

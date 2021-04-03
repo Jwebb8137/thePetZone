@@ -24,7 +24,7 @@ import "./HomeScreen.css";
 
 export default class HomeScreen extends Component {
   componentDidMount() {
-    window.scrollTo(0, 0);
+    document.querySelector("body").scrollTo(0, 0);
   }
   render() {
     return (

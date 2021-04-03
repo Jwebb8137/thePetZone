@@ -12,7 +12,7 @@ import SliderImg5 from "../../assets/pet-slider-1.jpg";
 
 const PetProfile = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    document.querySelector("body").scrollTo(0, 0);
   }, []);
 
   return (
