@@ -6,7 +6,13 @@
 }
 
 #bottom-nav a {
-  color: #03c03c;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(3, 192, 60) 0%,
+    rgb(92, 252, 140) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "Raleway", sans-serif;
   font-size: 1.75rem;
   font-weight: 600;
@@ -20,7 +26,6 @@
 
 @media (min-width: 375px) {
   #bottom-nav a {
-    color: #03c03c;
     font-family: "Raleway", sans-serif;
     font-size: 1.75rem;
     font-weight: 600;
