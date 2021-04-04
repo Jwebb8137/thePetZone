@@ -60,6 +60,7 @@ nav span {
   color: #fdf9f4;
   font-family: "Sniglet", cursive;
   font-size: 1.2rem;
+  line-height: 1;
   margin-top: 6px;
   text-decoration: none;
   font-weight: 400;
@@ -92,7 +93,12 @@ nav span {
 }
 
 .toggle-btn {
-  background-color: #0dab3f;
+  background: rgb(3, 192, 60);
+  background-image: linear-gradient(
+    90deg,
+    rgb(3, 192, 60) 0%,
+    rgb(92, 252, 140) 100%
+  );
   border-radius: 50%;
   color: #fff;
   display: block;
@@ -109,8 +115,14 @@ a:hover {
 }
 
 .navigation li i {
-  font-size: 3.25rem;
-  color: #4ee27b;
+  font-size: 3.5rem;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(3, 192, 60) 0%,
+    rgb(92, 252, 140) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navigation li:hover,
@@ -120,13 +132,17 @@ a:hover {
 }
 
 #nav-logout {
-  background: #4ee27b;
+  background: rgb(3, 192, 60);
+  background-image: linear-gradient(
+    90deg,
+    rgb(3, 192, 60) 0%,
+    rgb(92, 252, 140) 100%
+  );
   border: none;
   font-family: "Sniglet", cursive;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.2rem;
   position: absolute;
-  top: 14px;
+  top: 10px;
   left: 10px;
   padding: 7px 18px;
 }
@@ -165,13 +181,16 @@ a:hover {
   }
 
   .hide-menu-btn {
-    background-color: #4ee27b;
-    border: 2px solid #3fa35e;
+    background-image: linear-gradient(
+      90deg,
+      rgb(3, 192, 60) 0%,
+      rgb(92, 252, 140) 100%
+    );
     position: absolute;
-    top: 18px;
-    padding: 0px 12px;
-    right: 20px;
-    border-radius: 5px;
+    top: 12px;
+    padding: 2px 14px;
+    right: 12px;
+    border-radius: 3px;
   }
   .nav-respond {
     right: 0;

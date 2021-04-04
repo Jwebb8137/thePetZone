@@ -34,7 +34,7 @@ export default class HomeScreen extends Component {
           <div className="fade-in-1 w-view">
             <h3 className="display-heading mb-0">Ready To Find</h3>
             <h3 className="sub-heading mb-3">That Special Someone?</h3>
-            <button id="display-search" class="btn submit w-75">
+            <button id="display-search" class="btn submit shadow w-75">
               Search Now <i class="fas fa-caret-right"></i>
             </button>
           </div>
@@ -48,7 +48,7 @@ export default class HomeScreen extends Component {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <i class="fas fa-paw text-dark lg-paw mt-4 mb-0"></i>
+                <i class="fas fa-paw text-dark lg-paw mt-4 mb-3"></i>
                 <h2 className="text-dark">
                   Helping To Find Their
                   <br />
@@ -59,12 +59,12 @@ export default class HomeScreen extends Component {
           </div>
         </div>
         <div className="row mt-3">
-          <div className="col-12">
-            <img src={CatImg} className="w-75 r-50 lrg-img" />
+          <div className="col-12 px-4">
+            <img src={CatImg} className="w-75 r-50 lrg-img shadow" />
             <h2 className="mt-4 mb-0">
               Meet Patches <i class="fas fa-heart"></i>
             </h2>
-            <p className="home-p px-4 mt-1 mb-0">
+            <p className="home-p px-1 mt-1 mb-0">
               One of many loving cats who deserve a loving home!
             </p>
           </div>
@@ -100,25 +100,24 @@ export default class HomeScreen extends Component {
               <span>View All</span>
             </div>
           </div>
-          <div className="col-12">
+          <div className="col-12 mt-3">
             <ButtonSlider
               title="Search Cats"
               color="#fff"
-              bgColor="#393d42"
-              border="1px solid #000"
+              border="2px solid #0000004f"
             />
           </div>
-          <div className="col-12 mt-5">
-            <img src={DogImg} className="w-75 r-50 lrg-img" />
+          <div className="col-12 px-4 my-5">
+            <img src={DogImg} className="w-75 r-50 shadow lrg-img" />
             <h2 className="mt-4 mb-0">
               Meet Chester! <i class="fas fa-heart"></i>
             </h2>
-            <p className="home-p px-4 mt-1 mb-0">
+            <p className="home-p px-2 mt-1 mb-0">
               One of many loving dogs who deserve a loving home!
             </p>
           </div>
         </div>
-        <h2 className="mb-0 mt-5">Look At These Dogs!</h2>
+        <h2 className="mb-0 mt-1">Look At These Dogs!</h2>
         <div className="scrolling-wrapper home-scrolling-wrapper px-4 col-12 mb-2">
           <CardSlider
             img={HomeSliderImg6}
@@ -154,8 +153,7 @@ export default class HomeScreen extends Component {
           <ButtonSlider
             title="Search Dogs"
             color="#fff"
-            bgColor="#393d42"
-            border="1px solid #fff"
+            border="2px solid #0000004f"
           />
         </div>
         <h2 className="m-0">

@@ -69,6 +69,14 @@ u,
   font-size: 2.5rem;
 }
 
+.card-footer {
+  border-radius: 0 0 10px 10px !important;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(57 61 66) 0%, rgb(103 103 103) 100%);
+}
+
 .card-title {
   font-size: 1.75rem;
 }

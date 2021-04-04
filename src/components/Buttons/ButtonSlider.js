@@ -1,11 +1,12 @@
 import React from "react";
+import "./ButtonSlider.css";
 
 const ButtonSlider = (props) => {
   return (
     <button
-      class="btn submit btn-alt w-75"
+      id="button-slider"
+      class="btn submit btn-alt bg-dark-grad shadow w-75"
       style={{
-        background: props.bgColor,
         border: props.border,
         color: props.color,
       }}

@@ -21,7 +21,7 @@ const CardSlider = (props) => {
   ) : null;
 
   return (
-    <div class="card card-slider col-4 w-75">
+    <div class="card card-slider shadow-card col-4 w-75">
       {renewBtn}
       {deleteBtn}
       <img src={props.img} className="slider-img" />

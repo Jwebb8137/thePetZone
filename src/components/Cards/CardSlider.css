@@ -19,6 +19,10 @@
   justify-content: space-around;
 }
 
+.shadow-card {
+  box-shadow: 0.5rem 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+}
+
 .card-title i {
   font-size: 1.35rem;
   padding-top: 0.5rem;
