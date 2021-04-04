@@ -125,6 +125,10 @@ button {
   min-height: 100vh;
 }
 
+.bg-grn {
+  background: green;
+}
+
 .fade-in-1 {
   animation: fadeIn ease 4s;
   color: #393d42;

@@ -5,8 +5,8 @@ const SearchTab = (props) => {
   return (
     <Fragment>
       <form id="search-form" class="homepage-search mt-0">
-        <div className="container px-2 pt-1">
-          <p className="mt-0 txt-md px-3">
+        <div className="container px-3 pt-1">
+          <p className="mt-4 txt-md px-3">
             <span className="txt-lg d-block">{props.text}</span>
             <span className="d-block sub-text-form">{props.subtext}</span>
           </p>
@@ -51,7 +51,7 @@ const SearchTab = (props) => {
               </div>
             </div>
           </div>
-          <button type="submit" class="btn submit w-75">
+          <button id="form-submit" type="submit" class="btn submit w-100">
             Start Looking <i class="fas fa-caret-right"></i>
           </button>
         </div>

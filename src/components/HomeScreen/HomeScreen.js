@@ -29,7 +29,7 @@ export default class HomeScreen extends Component {
   render() {
     return (
       <Fragment>
-        <div className="container fade-in p-0 m-0">
+        <div className="min-100-vw container fade-in p-0 m-0 green">
           <i class="fas fa-paw green display-paw mt-3 mb-2 w-view"></i>
           <div className="fade-in-1 w-view">
             <h3 className="display-heading mb-0">Ready To Find</h3>
@@ -48,8 +48,8 @@ export default class HomeScreen extends Component {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <i class="fas fa-paw green lg-paw mt-3 mb-2"></i>
-                <h2>
+                <i class="fas fa-paw text-dark lg-paw mt-4 mb-0"></i>
+                <h2 className="text-dark">
                   Helping To Find Their
                   <br />
                   Furever Homes{" "}
@@ -58,10 +58,10 @@ export default class HomeScreen extends Component {
             </div>
           </div>
         </div>
-        <div className="row mt-4">
+        <div className="row mt-3">
           <div className="col-12">
             <img src={CatImg} className="w-75 r-50 lrg-img" />
-            <h2 className="mt-3 mb-0">
+            <h2 className="mt-4 mb-0">
               Meet Patches <i class="fas fa-heart"></i>
             </h2>
             <p className="home-p px-4 mt-1 mb-0">
@@ -110,7 +110,7 @@ export default class HomeScreen extends Component {
           </div>
           <div className="col-12 mt-5">
             <img src={DogImg} className="w-75 r-50 lrg-img" />
-            <h2 className="mt-3 mb-0">
+            <h2 className="mt-4 mb-0">
               Meet Chester! <i class="fas fa-heart"></i>
             </h2>
             <p className="home-p px-4 mt-1 mb-0">

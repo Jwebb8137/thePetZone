@@ -1,9 +1,12 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Signin.css";
 import FormBg from "../../assets/form-bg.png";
 
 const Signin = () => {
+  useEffect(() => {
+    document.querySelector("body").scrollTo(0, 0);
+  });
   return (
     <Fragment>
       <div id="signin-container" className="container fade-in p-0">
@@ -39,7 +42,7 @@ const Signin = () => {
               Sign up <i class="fas fa-caret-right"></i>
             </button>
           </Link>
-          <img src={FormBg} />
+          <img src={FormBg} className="mt-4" />
         </form>
       </div>
     </Fragment>

@@ -25,9 +25,17 @@ const CardSlider = (props) => {
       {renewBtn}
       {deleteBtn}
       <img src={props.img} className="slider-img" />
-      <h3 className="card-title pt-2 px-3 m-0 d-flex justify-content-center">
-        {props.name}
-      </h3>
+      <div className="card-title pt-1 px-2 row m-0 d-flex justify-content-space">
+        <div className="col-3 px-0">
+          <i class="fas fa-bone"></i>
+        </div>
+        <div className="col-6 px-0">
+          <h3 className="m-0">{props.name}</h3>
+        </div>
+        <div className="col-3 px-0">
+          <i class="fas fa-dog"></i>
+        </div>
+      </div>
       <p className="mb-1">{props.location}</p>
       <div className="card-footer">2 days ago</div>
       {editBtn}

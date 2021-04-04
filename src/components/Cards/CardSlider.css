@@ -8,13 +8,20 @@
 .card-slider img {
   border-radius: 10px 10px 0 0;
   height: 100%;
-  max-height: 250px;
+  max-height: 225px;
   width: 100%;
 }
 
 .scrolling-wrapper .card-title {
   background: #fff;
   border-radius: 0 0 10px 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-title i {
+  font-size: 1.35rem;
+  padding-top: 0.5rem;
 }
 
 #slider-reactivate {

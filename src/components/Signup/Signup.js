@@ -1,10 +1,13 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import ReactTooltip from "react-tooltip";
 import { Link } from "react-router-dom";
 import "./Signup.css";
 import FormBg from "../../assets/form-bg.png";
 
 const Signup = () => {
+  useEffect(() => {
+    document.querySelector("body").scrollTo(0, 0);
+  });
   // function for validating matching passwords
   const validateRepeatPassword = () => {
     const repeatPassword = this.state.repeatPassword.value.trim();

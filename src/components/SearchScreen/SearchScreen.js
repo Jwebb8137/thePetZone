@@ -15,7 +15,7 @@ const SearchScreen = () => {
 
   return (
     <Fragment>
-      <div className="w-100 container fade-in px-2 bg-light-grn pt-2">
+      <div className="w-100 container fade-in px-2 bg-light-grn pt-3">
         <SearchForm />
         <div className="card-group">
           <CardFeatured img={Img4} name="Cheeto" />

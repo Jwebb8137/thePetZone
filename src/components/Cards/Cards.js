@@ -24,7 +24,8 @@ const Cards = (props) => {
           bulk of the card's content.
         </p>
         <Link to="/PetProfile/Cat" className="btn bg-grn w-75">
-          More Info <i className="fa fa-caret-right" aria-hidden="true"></i>
+          View Profile{" "}
+          <i className="fa fa-caret-right mx-1" aria-hidden="true"></i>
         </Link>
       </div>
       <div className="card-footer text-muted">2 days ago</div>

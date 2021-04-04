@@ -34,12 +34,16 @@ export default class Navbar extends React.Component {
             </div>
             <nav>
               <ul id="nav" className="navigation">
-                <img id="sidebar-img" className="my-1" src={Profile} />
-                <span className="helper-text">
-                  Llama Joe
-                  <br />
-                  <span className="sub-text">Da Mountains, Chile</span>
-                </span>
+                <Link to="/Account" onClick={this.handleMenu}>
+                  <div className="d-flex flex-column align-items-center">
+                    <img id="sidebar-img" className="my-1" src={Profile} />
+                    <span className="helper-text">
+                      Llama Joe
+                      <br />
+                      <span className="sub-text">Da Mountains, Chile</span>
+                    </span>
+                  </div>
+                </Link>
                 <div className="row mt-3 d-flex justify-content-center">
                   <div className="col-5 p-0">
                     <Link to="/">
@@ -116,11 +120,16 @@ export default class Navbar extends React.Component {
           </div>
           <nav>
             <ul id="nav" className="navigation">
-              <img id="sidebar-img" className="my-1" src={Profile} />
-              <span className="helper-text mt-0">
-                Llama Joe <br />
-                <span className="sub-text">Da Mountains, Chile</span>
-              </span>
+              <Link to="/Account" onClick={this.handleMenu}>
+                <div className="d-flex flex-column align-items-center">
+                  <img id="sidebar-img" className="my-1" src={Profile} />
+                  <span className="helper-text">
+                    Llama Joe
+                    <br />
+                    <span className="sub-text">Da Mountains, Chile</span>
+                  </span>
+                </div>
+              </Link>
               <div className="row mt-3 d-flex justify-content-center">
                 <div className="col-5 p-0">
                   <Link to="/">

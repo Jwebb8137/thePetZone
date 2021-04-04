@@ -7,8 +7,15 @@
   padding: 0;
 }
 
+#search-form nav {
+  margin-top: -1px;
+}
+
+.search-form-container {
+  border-radius: 13px;
+}
+
 .homepage-search img {
-  background: url("../../assets/form-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -41,18 +48,27 @@
 }
 
 #search-form .nav-item i {
-  color: #393d42;
+  color: #f7f7f7;
   width: 40px;
 }
 
+.border-sides {
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+}
+
 #search-form .nav-item .active i {
-  color: #3adc6b;
+  color: #7cde99;
   text-decoration: underline;
-  transform: scale(1.25);
+  transform: scale(1.15);
 }
 
 #search-form img {
   border-radius: 0 0 13px 13px;
+}
+
+#search-form .tab-content {
+  background: #f7f7f7;
 }
 
 .nav-pills .nav-link.active {
@@ -67,8 +83,9 @@
 }
 
 #search-form .nav {
-  border-top: 30px solid #393d42;
+  border-bottom: 3px solid #393d42;
   border-radius: 13px 13px 0 0;
+  background: #393d42;
 }
 
 #search-nav .form-active {
@@ -138,7 +155,7 @@ col {
 
 #search-form .nav-link {
   font-size: 2rem;
-  padding: 1rem;
+  padding: 1.15rem;
 }
 
 .nav-justified .nav-item {

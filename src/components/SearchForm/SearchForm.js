@@ -2,15 +2,15 @@ import React, { Fragment, useEffect } from "react";
 import SearchTab from "./SearchTab";
 import CatFormImg from "../../assets/cat-form.png";
 import DogFormImg from "../../assets/dog-form.png";
-import ShelterFormImg from "../../assets/shelter-form.png";
+import ShelterFormImg from "../../assets/shelter-form.jpg";
 import "./SearchForm.css";
 
 const SearchForm = () => {
   return (
     <Fragment>
-      <div id="search-form">
+      <div id="search-form" className="search-form-container">
         <ul
-          class="nav nav-pills nav-justified mb-0 px-2 pt-0"
+          class="nav nav-pills nav-justified mb-0 px-0 pt-0"
           id="pills-tab"
           role="tablist"
         >
@@ -28,7 +28,7 @@ const SearchForm = () => {
               <i class="fas fa-cat"></i>
             </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li class="nav-item border-sides" role="presentation">
             <button
               class="nav-link"
               id="pills-profile-tab"
@@ -57,7 +57,7 @@ const SearchForm = () => {
             </button>
           </li>
         </ul>
-        <div class="tab-content p-0" id="pills-tabContent">
+        <div class="tab-content px-2 py-0" id="pills-tabContent">
           <div
             class="tab-pane fade show active"
             id="pills-home"
@@ -65,8 +65,8 @@ const SearchForm = () => {
             aria-labelledby="pills-home-tab"
           >
             <SearchTab
-              text={"Cats, cats, cats!"}
-              subtext={"They can't wait to meet you"}
+              text={"Bring on the Cats"}
+              subtext={"Get ready for your heart to melt!"}
               img={CatFormImg}
             />
           </div>
@@ -77,8 +77,8 @@ const SearchForm = () => {
             aria-labelledby="pills-profile-tab"
           >
             <SearchTab
-              text={"Dogs, dogs, dogs!"}
-              subtext={"They can't wait to meet you!"}
+              text={"Let the Dogs Out"}
+              subtext={"Time to turn this party up!"}
               img={DogFormImg}
             />{" "}
           </div>
@@ -89,8 +89,8 @@ const SearchForm = () => {
             aria-labelledby="pills-contact-tab"
           >
             <SearchTab
-              text={"Shelters are here!"}
-              subtext={"They can't wait to see you"}
+              text={"Shelter Squads"}
+              subtext={"Support and donate some time!"}
               img={ShelterFormImg}
             />
           </div>
