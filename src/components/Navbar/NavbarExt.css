@@ -35,7 +35,7 @@
   border-radius: 10px 0 0 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .navbar-ext {
     display: block;
   }

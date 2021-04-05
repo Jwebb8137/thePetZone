@@ -27,7 +27,7 @@
   font-size: 1.25rem;
   font-family: "Sniglet", cursive;
   border: 2px solid #03c03c;
-  padding: 10px 20px;
+  padding: 13px 20px;
   border-radius: 30px;
 }
 
@@ -58,7 +58,14 @@
 }
 
 #search-form .nav-item .active i {
-  color: #7cde99;
+  background: rgb(3, 192, 60);
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(3, 192, 60) 0%,
+    rgb(92, 252, 140) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-decoration: underline;
   transform: scale(1.15);
 }
@@ -116,9 +123,16 @@ col {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #03c03c;
 }
 
+.form-floating > .form-control,
+.form-floating > .form-select {
+  height: calc(3.5rem + 2px);
+  padding: 1rem 2rem;
+  font-family: "Roboto";
+}
+
 .homepage-search label {
-  font-size: 0.85rem;
-  font-weight: bold;
+  font-size: 0.95rem;
+  font-family: "Roboto";
   left: 13px;
   position: absolute;
   top: 1px;
@@ -155,7 +169,7 @@ col {
 
 #search-form .nav-link {
   font-size: 2rem;
-  padding: 1.15rem;
+  padding: 1rem;
 }
 
 .nav-justified .nav-item {

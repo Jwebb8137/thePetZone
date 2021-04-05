@@ -1,5 +1,4 @@
 #bottom-nav {
-  background: #393d42;
   flex-wrap: nowrap;
   justify-content: center;
   padding: 0;
@@ -20,8 +19,14 @@
 }
 
 #bottom-nav .bottom-nav-active {
-  background: #9c9c9c;
-  color: #e5fee1;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #393d42;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(3, 192, 60) 0%,
+    rgb(92, 252, 140) 100%
+  );
+  color: #393d42 !important;
 }
 
 @media (min-width: 375px) {

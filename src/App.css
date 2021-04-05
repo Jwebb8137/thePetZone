@@ -49,10 +49,6 @@ h2 {
   width: 100%;
 }
 
-.lg-paw {
-  font-size: 6rem;
-}
-
 .logo-lg {
   font-family: "Sniglet", cursive;
   letter-spacing: 0.05em;
@@ -65,4 +61,8 @@ h2 {
   background-color: #eacdff;
   height: 3em;
   width: 3em;
+}
+
+.shadow {
+  box-shadow: -0.4rem 0.25rem 1rem rgba(0, 0, 0, 0.25) !important;
 }

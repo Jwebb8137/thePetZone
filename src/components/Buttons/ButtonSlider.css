@@ -6,3 +6,12 @@
     rgba(107, 107, 107, 1) 100%
   ) !important;
 }
+
+.bg-dark-grad-vertical {
+  background: rgb(0, 0, 0) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(53, 53, 53) 100%
+  ) !important;
+}

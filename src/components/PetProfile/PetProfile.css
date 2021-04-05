@@ -1,5 +1,4 @@
 #pet-profile-img {
-  border: 1px solid #0dab3f;
   border-radius: 50%;
   position: absolute;
   left: 30%;
@@ -28,15 +27,42 @@
   right: 25px;
 }
 
+.bg-back-grn {
+  background: rgb(3, 192, 60);
+  background-image: linear-gradient(
+    90deg,
+    rgb(3, 192, 60) 0%,
+    rgb(92, 252, 140) 100%
+  );
+}
+
+.col-gap-1 {
+  column-gap: 1rem;
+}
+
 .btn-profile {
-  background: #fff;
-  border: 2px solid #393d42;
-  border-radius: 30px;
-  color: #393d42;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  font-weight: 400;
+  height: 85px;
+  position: relative;
+  width: 85px;
+}
+
+.helper-text {
+  font-size: 1.1rem;
   font-family: "Sniglet";
-  font-size: 1rem;
-  padding: 10px 20px;
-  font-weight: 600;
+}
+
+.btn-profile i {
+  font-size: 1.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .scrolling-wrapper {

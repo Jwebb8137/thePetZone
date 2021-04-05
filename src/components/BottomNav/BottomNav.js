@@ -7,7 +7,7 @@ const BottomNav = () => {
     <div>
       <nav class="navbar fixed-bottom navbar-dark p-0">
         <div class="container-fluid p-0">
-          <div id="bottom-nav" class="navbar nav-justified w-100">
+          <div id="bottom-nav" class="navbar bg-dark-grad nav-justified w-100">
             <NavLink
               exact
               to="/"

@@ -9,6 +9,20 @@
   opacity: 0.8;
 }
 
+.lg-paw {
+  font-size: 8rem;
+}
+
+.bg-grn-grad {
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(3, 192, 60) 0%,
+    rgb(92, 252, 140) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 span {
   font-family: inherit;
 }
@@ -86,7 +100,7 @@ button {
 }
 
 .fa-arrow-circle-right {
-  margin-left: 3px;
+  margin-left: 5px;
 }
 
 .lrg-img {

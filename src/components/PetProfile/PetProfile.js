@@ -32,7 +32,7 @@ const PetProfile = () => {
               Your browser does not support the video tag.
             </video>
             <i id="cover-upload-icon" class="fas fa-camera"></i>
-            <img id="pet-profile-img" src={PetProfileImg} className="" />
+            <img id="pet-profile-img" src={PetProfileImg} className="shadow" />
           </div>
         </div>
         <div
@@ -40,30 +40,32 @@ const PetProfile = () => {
           className="row mb-0 d-flex justify-content-center"
         >
           <div className="col-12 mt-3">
-            <h2 className="mb-1">Cheetoh</h2>
-            <p className="px-3 mb-3">
+            <h2 className="mb-0">Cheetoh</h2>
+            <p className="px-1 mb-3">
               This adorable young man is 12 weeks old and looking for somewhere
               to call home!
             </p>
           </div>
-          <div className="col-12 p-0">
-            <button className="btn btn-success btn-profile m-2 mt-0">
-              <i class="fas fa-phone-volume"></i> 919-536-1234
+          <div className="col-12 p-0 d-flex justify-content-center col-gap-1">
+            <button className="btn btn-success d-flex flex-column bg-dark-grad btn-profile m-2 mt-0">
+              <i class="fas fa-phone-volume"></i>
+              <span className="helper-text">Call</span>
             </button>
             <Link
               to="/Chat/ChatRoom"
-              className="btn btn-success btn-profile m-2 mt-0"
+              className="btn btn-profile d-flex flex-column bg-back-grn m-2 mt-0"
             >
-              <i class="fas fa-laptop"></i> Virtual Visit
+              <i class="fas fa-laptop"></i>
+              <span className="helper-text">Visit</span>
             </Link>
           </div>
         </div>
         <div className="scrolling-wrapper my-3">
-          <img src={SliderImg1} className="slider-img col-4 w-75 mx-2" />
-          <img src={SliderImg2} className="slider-img col-4 w-75 mx-2" />
-          <img src={SliderImg3} className="slider-img col-4 w-75 mx-2" />
-          <img src={SliderImg4} className="slider-img col-4 w-75 mx-2" />
-          <img src={SliderImg5} className="slider-img col-4 w-75 mx-2" />
+          <img src={SliderImg1} className="slider-img shadow col-4 w-75 mx-3" />
+          <img src={SliderImg2} className="slider-img shadow col-4 w-75 mx-3" />
+          <img src={SliderImg3} className="slider-img shadow col-4 w-75 mx-3" />
+          <img src={SliderImg4} className="slider-img shadow col-4 w-75 mx-3" />
+          <img src={SliderImg5} className="slider-img shadow col-4 w-75 mx-3" />
         </div>
         <div className="col-12 mt-0">
           <h2 className="mb-1">* Available *</h2>

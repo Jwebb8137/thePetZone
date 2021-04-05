@@ -1,8 +1,8 @@
 .scrolling-wrapper .card-slider {
-  border: 1px solid #393d42;
   border-radius: 10px;
   display: inline-block;
   margin-right: 2rem;
+  min-width: 250px;
   max-width: 300px;
 }
 .card-slider img {
@@ -20,7 +20,7 @@
 }
 
 .shadow-card {
-  box-shadow: 0.5rem 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+  box-shadow: -0.4rem 0.25rem 1rem rgba(0, 0, 0, 0.25) !important;
 }
 
 .card-title i {

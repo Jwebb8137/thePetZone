@@ -33,7 +33,7 @@ export default class Navbar extends React.Component {
               </Link>
             </div>
             <nav>
-              <ul id="nav" className="navigation">
+              <ul id="nav" className="navigation bg-dark-grad-vertical">
                 <Link to="/Account" onClick={this.handleMenu}>
                   <div className="d-flex flex-column align-items-center">
                     <img id="sidebar-img" className="my-1" src={Profile} />
@@ -119,7 +119,7 @@ export default class Navbar extends React.Component {
             </Link>
           </div>
           <nav>
-            <ul id="nav" className="navigation">
+            <ul id="nav" className="navigation bg-dark-grad-vertical">
               <Link to="/Account" onClick={this.handleMenu}>
                 <div className="d-flex flex-column align-items-center">
                   <img id="sidebar-img" className="my-1" src={Profile} />
@@ -184,7 +184,10 @@ export default class Navbar extends React.Component {
               </Link>
             </ul>
             <label htmlFor="toggle-btn" className="show-menu-btn">
-              <span className="toggle-btn" onClick={this.handleMenu}>
+              <span
+                className="toggle-btn bg-back-grn"
+                onClick={this.handleMenu}
+              >
                 <i className="fas fa-bars"></i>
               </span>
             </label>

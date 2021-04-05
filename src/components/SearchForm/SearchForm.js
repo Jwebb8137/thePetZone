@@ -10,7 +10,7 @@ const SearchForm = () => {
     <Fragment>
       <div id="search-form" className="search-form-container">
         <ul
-          class="nav nav-pills nav-justified mb-0 px-0 pt-0"
+          class="nav nav-pills bg-dark-grad nav-justified mb-0 px-0 pt-0"
           id="pills-tab"
           role="tablist"
         >

@@ -7,11 +7,11 @@ const ButtonSlider = (props) => {
       id="button-slider"
       class="btn submit btn-alt bg-dark-grad shadow w-75"
       style={{
-        border: props.border,
+        border: "none",
         color: props.color,
       }}
     >
-      {props.title} <i class="fas fa-arrow-circle-right ml-3"></i>
+      {props.title} <i class="fas fa-arrow-circle-right bg-grn-grad"></i>
     </button>
   );
 };

@@ -8,14 +8,16 @@ const Cards = (props) => {
     fill === "far" ? setFill("fa") : setFill("far");
   };
   return (
-    <div className="card my-3 mx-2 pt-0">
-      <i
-        class={`${fill} fa-heart card-favorited`}
-        aria-hidden="true"
-        onClick={setFillLike}
-      ></i>
+    <div className="card shadow my-4 mx-2 pt-0">
+      <div className="card-favorited-container">
+        <i
+          class={`${fill} fa-heart card-favorited`}
+          aria-hidden="true"
+          onClick={setFillLike}
+        ></i>
+      </div>
       <img src={props.img} className="card-img-top" alt="..." />
-      <div className="card-body">
+      <div className="card-body pt-2">
         <h5 className="card-title">
           <strong>{props.name}</strong>
         </h5>
@@ -23,12 +25,11 @@ const Cards = (props) => {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </p>
-        <Link to="/PetProfile/Cat" className="btn bg-grn w-75">
-          View Profile{" "}
-          <i className="fa fa-caret-right mx-1" aria-hidden="true"></i>
+        <Link to="/PetProfile/Cat" className="btn bg-grn w-75 shadow">
+          View Profile <i className="fa fa-caret-right" aria-hidden="true"></i>
         </Link>
       </div>
-      <div className="card-footer text-muted">2 days ago</div>
+      <div className="card-footer">2 days ago</div>
     </div>
   );
 };

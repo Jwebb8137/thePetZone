@@ -3,6 +3,24 @@
 }
 
 #form-submit {
-  font-size: 1.5rem;
-  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  background: rgb(3, 192, 60);
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(3, 192, 60) 0%,
+    rgb(102 255 148) 100%
+  );
+  font-size: 1.35rem;
+  padding: 14px 0;
+  justify-content: center;
+  letter-spacing: 1px;
+  color: #1b1b1b;
+  align-items: center;
+}
+
+#form-submit i {
+  font-size: 1.7rem;
+  margin-left: 0.5rem;
 }

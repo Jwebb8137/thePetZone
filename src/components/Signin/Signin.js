@@ -9,7 +9,7 @@ const Signin = () => {
   });
   return (
     <Fragment>
-      <div id="signin-container" className="container fade-in p-0">
+      <div id="signin-container" className="container fade-in pt-3">
         <h3 className="my-3">Already Have An Account?</h3>
         <form className="homepage-search px-3">
           <div class="form-floating mb-3">
@@ -38,11 +38,14 @@ const Signin = () => {
           </button>
           <div class="form-text my-2">Or</div>
           <Link to="/Signup">
-            <button type="button" class="btn btn-grey btn-lg btn-block w-75">
+            <button
+              type="button"
+              class="btn bg-dark-grad btn-lg text-white btn-block w-75"
+            >
               Sign up <i class="fas fa-caret-right"></i>
             </button>
           </Link>
-          <img src={FormBg} className="mt-4" />
+          <img src={FormBg} id="sign-in-float-img" />
         </form>
       </div>
     </Fragment>

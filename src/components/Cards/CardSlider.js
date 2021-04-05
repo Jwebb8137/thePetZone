@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./CardSlider.css";
 
 const CardSlider = (props) => {
@@ -21,25 +22,27 @@ const CardSlider = (props) => {
   ) : null;
 
   return (
-    <div class="card card-slider shadow-card col-4 w-75">
-      {renewBtn}
-      {deleteBtn}
-      <img src={props.img} className="slider-img" />
-      <div className="card-title pt-1 px-2 row m-0 d-flex justify-content-space">
-        <div className="col-3 px-0">
-          <i class="fas fa-bone"></i>
+    <Link to="/PetProfile/Cat" className="card-link m-0">
+      <div class="card card-slider text-dark shadow-card col-4 w-75">
+        {renewBtn}
+        {deleteBtn}
+        <img src={props.img} className="slider-img" />
+        <div className="card-title pt-1 px-1 row m-0 d-flex justify-content-space">
+          <div className="col-2 px-0">
+            <i class="fas fa-bone bg-grn-grad"></i>
+          </div>
+          <div className="col-8 px-0">
+            <h3 className="m-0 p-0">{props.name}</h3>
+          </div>
+          <div className="col-2 px-0">
+            <i class="fas fa-dog bg-grn-grad"></i>
+          </div>
         </div>
-        <div className="col-6 px-0">
-          <h3 className="m-0">{props.name}</h3>
-        </div>
-        <div className="col-3 px-0">
-          <i class="fas fa-dog"></i>
-        </div>
+        <p className="mb-1">{props.location}</p>
+        <div className="card-footer">2 days ago</div>
+        {editBtn}
       </div>
-      <p className="mb-1">{props.location}</p>
-      <div className="card-footer">2 days ago</div>
-      {editBtn}
-    </div>
+    </Link>
   );
 };
 

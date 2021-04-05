@@ -3,8 +3,16 @@
 }
 
 .bg-grn {
-  background: #1a8941;
-  color: #fff;
+  background: rgb(3, 192, 60);
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(3, 192, 60) 0%,
+    rgb(92, 252, 140) 100%
+  );
+}
+
+.card-group {
+  padding: 0 0.5rem;
 }
 
 .card {
@@ -15,9 +23,22 @@
 }
 
 .card .btn {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Sniglet", cursive;
   font-size: 1.15rem;
   font-weight: 500;
+  border-radius: 30px;
+  margin: auto;
+  padding: 10px 15px;
+  font-size: 1.25rem;
+}
+
+.card .btn i {
+  font-size: 1.6rem;
+  margin-left: 0.4rem;
 }
 
 .card-header {
@@ -69,6 +90,15 @@ u,
   font-size: 2.5rem;
 }
 
+.card-favorited-container {
+  background: rgb(3, 192, 60);
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(3, 192, 60) 0%,
+    rgb(92, 252, 140) 100%
+  );
+}
+
 .card-footer {
   border-radius: 0 0 10px 10px !important;
   color: #fff;
@@ -78,6 +108,7 @@ u,
 }
 
 .card-title {
+  font-family: "Sniglet";
   font-size: 1.75rem;
 }
 
