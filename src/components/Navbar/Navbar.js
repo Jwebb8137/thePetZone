@@ -130,7 +130,7 @@ export default class Navbar extends React.Component {
                   </span>
                 </div>
               </Link>
-              <div className="row mt-4 d-flex justify-content-center">
+              <div className="row mt-3 d-flex justify-content-center">
                 <div className="col-5 p-0">
                   <Link to="/">
                     <li className="" onClick={this.handleMenu}>
