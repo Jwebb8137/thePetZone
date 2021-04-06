@@ -14,7 +14,7 @@ const FavoritesScreen = () => {
 
   return (
     <Fragment>
-      <div className="favorite-container w-100 fade-in container p-0 bg-light-grn pt-2">
+      <div className="favorite-container w-100 fade-in container p-0 bg-light-grn pt-2 pb-5">
         <div className="card-group">
           <Cards img={Img1} name="Sasha" />
           <Cards img={Img2} name="Marvin" />

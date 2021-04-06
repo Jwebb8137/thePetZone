@@ -2,7 +2,7 @@
   background: rgb(0, 0, 0) !important;
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 1) 0%,
+    rgb(31, 30, 30) 0%,
     rgba(107, 107, 107, 1) 100%
   ) !important;
 }
@@ -11,7 +11,7 @@
   background: rgb(0, 0, 0) !important;
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgb(53, 53, 53) 100%
+    rgb(19 17 17) 0%,
+    rgb(54 54 54) 100%
   ) !important;
 }

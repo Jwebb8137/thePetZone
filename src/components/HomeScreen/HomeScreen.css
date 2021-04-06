@@ -91,7 +91,8 @@ h2 {
 .btn,
 .submit,
 button {
-  max-width: 400px;
+  max-width: 275px;
+  margin: auto;
 }
 
 .btn-alt {
@@ -110,7 +111,7 @@ button {
 .display-paw {
   color: #d2fdcb;
   font-size: 14rem;
-  top: -20px;
+  top: 0;
 }
 
 #display-search {
@@ -133,7 +134,7 @@ button {
 }
 
 .fade-in-1 {
-  top: 40px;
+  top: 55px;
 }
 
 .main-heading,

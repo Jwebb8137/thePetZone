@@ -1,3 +1,24 @@
+#signup-container {
+  background-image: linear-gradient(0deg, #f7f7f7 0%, #a1ffbd63 100%);
+}
+
+#signup-container .homepage-search {
+  background: none;
+}
+
+#signup-container .homepage-search select {
+  padding: 10px 15px 10px;
+}
+
+.shadow-input {
+  box-shadow: -1px 1px 10px rgb(0 0 0 / 25%) !important;
+}
+
+.heading-med {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
 #signup-container label {
   font-family: "Roboto";
   font-size: 0.95rem;

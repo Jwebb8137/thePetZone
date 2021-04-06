@@ -107,7 +107,7 @@ export default class Navbar extends React.Component {
     return (
       <Fragment>
         <NavbarExt />
-        <header className="mobile-nav">
+        <header className="mobile-nav bg-dark-grad">
           <div className="brand-logo">
             <Link to="/">
               <img

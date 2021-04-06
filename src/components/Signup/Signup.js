@@ -25,16 +25,16 @@ const Signup = () => {
   return (
     <Fragment>
       <ReactTooltip place="bottom" html={true} className="tooltip-text" />
-      <div id="signup-container" className="container fade-in p-0">
-        <h3 className="mt-3 mb-0">
-          Let's Get Started <i class="fas fa-paw grn"></i>
+      <div id="signup-container" className="container fade-in py-2">
+        <h3 className="mt-3 mb-0 heading-med">
+          Let's Get Started <i class="fas fa-paw bg-grn-grad"></i>
         </h3>
-        <p className="m-0">All we need is some quick info and you're all set</p>
-        <form className="homepage-search px-3">
-          <div class="row mb-2 py-3 d-flex justify-content-center">
+        <p className="m-0 px-2">All we need is some quick information!</p>
+        <form className="homepage-search px-3 mt-0">
+          <div class="row mb-2 pt-3 pb-0 d-flex justify-content-center">
             <div class="col-12 tooltip-container">
               <select
-                class="form-select form-select-lg m-0"
+                class="form-select shadow-input form-select-lg m-0"
                 aria-label=".form-select-lg example"
               >
                 <option selected>Account Type</option>
@@ -44,7 +44,7 @@ const Signup = () => {
               </select>
               <p className="text-align-left mt-2">
                 <span
-                  className="helper-text"
+                  className="helper-text-span"
                   data-tip="<p className='tooltip-text'><i class='fas fa-circle'></i> Choose the appropriate account you wish to sign up for. Just ask yourself if you own the animal, are representing a shelter, or helping out a friend?</p>"
                   data-html={true}
                 >
@@ -56,7 +56,7 @@ const Signup = () => {
               <div class="form-floating mb-3">
                 <input
                   type="input"
-                  class="form-control"
+                  class="form-control shadow-input"
                   id="floatingInput"
                   placeholder="user123"
                 />
@@ -68,7 +68,7 @@ const Signup = () => {
                 <input
                   type="password"
                   id="inputPassword5"
-                  class="form-control"
+                  class="form-control shadow-input"
                   placeholder="password123"
                   aria-describedby="passwordHelpBlock"
                 />
@@ -78,15 +78,14 @@ const Signup = () => {
                   class="form-text text-muted d-block mb-3"
                 >
                   Your password must be 8-20 characters long, contain letters
-                  and numbers, and must not contain spaces, special characters,
-                  or emoji.
+                  and numbers.
                 </small>
               </div>
               <div class="form-floating mb-3">
                 <input
                   type="password"
                   id="inputPassword5"
-                  class="form-control"
+                  class="form-control shadow-input"
                   placeholder="password123"
                   aria-describedby="passwordHelpBlock"
                 />
@@ -96,7 +95,7 @@ const Signup = () => {
             <div class="col-6">
               <div class="form-floating mb-3">
                 <input
-                  class="form-control"
+                  class="form-control shadow-input"
                   id="floatingInput"
                   placeholder="name@example.com"
                 />
@@ -106,7 +105,7 @@ const Signup = () => {
             <div class="col-6">
               <div class="form-floating mb-3">
                 <input
-                  class="form-control"
+                  class="form-control shadow-input"
                   id="floatingInput"
                   placeholder="name@example.com"
                 />
@@ -117,7 +116,7 @@ const Signup = () => {
               <div class="form-floating mb-3">
                 <input
                   type="email"
-                  class="form-control"
+                  class="form-control shadow-input"
                   id="floatingInput"
                   placeholder="name@example.com"
                 />
@@ -127,7 +126,7 @@ const Signup = () => {
             <div class="col-6">
               <div class="form-floating mb-3">
                 <input
-                  class="form-control"
+                  class="form-control shadow-input"
                   id="floatingInput"
                   placeholder="name@example.com"
                 />
@@ -137,7 +136,7 @@ const Signup = () => {
             <div class="col-6">
               <div class="form-floating mb-3">
                 <input
-                  class="form-control"
+                  class="form-control shadow-input"
                   id="floatingInput"
                   placeholder="name@example.com"
                 />
@@ -145,7 +144,10 @@ const Signup = () => {
               </div>
             </div>
           </div>
-          <button type="submit" class="btn btn-grn btn-lg w-75">
+          <button
+            type="submit"
+            class="btn shadow bg-grn btn-grn-grad btn-lg text-dark border-0 border-none w-75"
+          >
             Get Started <i class="fas fa-caret-right"></i>
           </button>
           <img src={FormBg} />

@@ -6,7 +6,7 @@
 
 header {
   display: flex;
-  height: 14vh;
+  height: 13vh;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -17,7 +17,7 @@ header {
 }
 
 .brand-logo {
-  max-width: 175px;
+  max-width: 150px;
   float: left;
   padding: 0;
 }
@@ -98,6 +98,7 @@ nav span {
   display: block;
   font-size: 2rem;
   height: 1.75em;
+  margin-bottom: 5px;
   width: 1.75em;
   display: flex;
   justify-content: center;
@@ -134,11 +135,11 @@ a:hover {
   );
   border: none;
   font-family: "Sniglet", cursive;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   position: absolute;
   top: 23px;
   left: 20px;
-  padding: 7px 18px;
+  padding: 9px 20px;
 }
 
 /*-- Responsive CSS --*/
@@ -150,7 +151,7 @@ a:hover {
 
   .navigation {
     position: fixed;
-    width: 75vw;
+    width: 70vw;
     height: 100vh;
     right: -150%;
     top: 0;

@@ -29,7 +29,7 @@ export default class HomeScreen extends Component {
   render() {
     return (
       <Fragment>
-        <div className="min-100-vw container fade-in p-0 m-0 green">
+        <div className="min-100-vw container fade-in pb-5 px-0 m-0 green">
           <i class="fas fa-paw green display-paw mt-3 mb-2 w-view"></i>
           <div className="fade-in-1 w-view">
             <h3 className="display-heading mb-0">Ready To Find</h3>
@@ -58,7 +58,7 @@ export default class HomeScreen extends Component {
             </div>
           </div>
         </div>
-        <div className="row mt-3">
+        <div className="row mt-1">
           <div className="col-12 px-4">
             <img src={CatImg} className="w-75 r-50 lrg-img shadow" />
             <h2 className="mt-4 mb-0">
@@ -160,7 +160,7 @@ export default class HomeScreen extends Component {
           They Deserve Our Love <i class="fas fa-heart bg-grn-grad"></i>
         </h2>
         <Carousel />
-        <h2>
+        <h2 className="mb-5">
           Let's Give All We Can <i class="fas fa-paw bg-grn-grad"></i>
         </h2>
       </Fragment>
