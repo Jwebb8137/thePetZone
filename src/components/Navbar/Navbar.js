@@ -123,7 +123,7 @@ export default class Navbar extends React.Component {
               <Link to="/Account" onClick={this.handleMenu}>
                 <div className="d-flex flex-column align-items-center">
                   <img id="sidebar-img" className="my-1" src={Profile} />
-                  <span className="helper-text">
+                  <span className="helper-text profile-nav-title">
                     Llama Joe
                     <br />
                     <span className="sub-text">Da Mountains, Chile</span>

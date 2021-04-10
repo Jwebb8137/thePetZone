@@ -25,15 +25,30 @@ import "./HomeScreen.css";
 export default class HomeScreen extends Component {
   componentDidMount() {
     document.querySelector("body").scrollTo(0, 0);
+
+    const example = async () => {
+      try {
+        const response = await fetch("http://localhost:8000/");
+        const data = await response.text();
+        console.log(data);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    example();
   }
+
   render() {
     return (
       <Fragment>
-        <div className="min-100-vw container fade-in pb-5 px-0 m-0 green">
-          <i class="fas fa-paw green display-paw mt-3 mb-2 w-view"></i>
-          <div className="fade-in-1 w-view">
-            <h3 className="display-heading mb-0">Ready To Find</h3>
-            <h3 className="sub-heading mb-3">That Special Someone?</h3>
+        <div className="min-100-vw container fade-in px-0 m-0 green">
+          <i class="fas fa-paw grow green display-paw mt-4 mb-2 w-view"></i>
+          <div className="fade-in-1 w-view mt-3">
+            <h3 className="display-heading mb-0">Helping Families Find</h3>
+            <h3 className="sub-heading mb-3">
+              the <u>Perfect Companion</u>
+            </h3>
             <button id="display-search" class="btn submit shadow w-75">
               Search Now <i class="fas fa-caret-right"></i>
             </button>
@@ -48,7 +63,7 @@ export default class HomeScreen extends Component {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <i class="fas fa-paw lg-paw bg-grn-grad mt-4 mb-3"></i>
+                <i class="fas fa-paw lg-paw grow bg-grn-grad mt-4 mb-3"></i>
                 <h2 className="text-dark">
                   Helping To Find Their
                   <br />
@@ -62,7 +77,7 @@ export default class HomeScreen extends Component {
           <div className="col-12 px-4">
             <img src={CatImg} className="w-75 r-50 lrg-img shadow" />
             <h2 className="mt-4 mb-0">
-              Meet Patches <i class="fas fa-heart bg-grn-grad"></i>
+              Meet Patches <i class="fas fa-heart grow bg-grn-grad"></i>
             </h2>
             <p className="home-p px-1 mt-1 mb-0">
               One of many loving cats who deserve a loving home!
@@ -110,7 +125,7 @@ export default class HomeScreen extends Component {
           <div className="col-12 px-4 my-5">
             <img src={DogImg} className="w-75 r-50 shadow lrg-img" />
             <h2 className="mt-4 mb-0">
-              Meet Chester! <i class="fas fa-heart bg-grn-grad"></i>
+              Meet Chester! <i class="fas fa-heart grow bg-grn-grad"></i>
             </h2>
             <p className="home-p px-2 mt-1 mb-0">
               One of many loving dogs who deserve a loving home!
@@ -157,12 +172,14 @@ export default class HomeScreen extends Component {
           />
         </div>
         <h2 className="m-0">
-          They Deserve Our Love <i class="fas fa-heart bg-grn-grad"></i>
+          They Deserve Our Love <i class="fas fa-heart grow bg-grn-grad"></i>
         </h2>
         <Carousel />
-        <h2 className="mb-5">
-          Let's Give All We Can <i class="fas fa-paw bg-grn-grad"></i>
-        </h2>
+        <div className="container pb-10">
+          <h2 className="">
+            Let's Give All We Can <i class="fas fa-paw bg-grn-grad"></i>
+          </h2>
+        </div>
       </Fragment>
     );
   }

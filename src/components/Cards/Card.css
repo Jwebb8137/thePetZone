@@ -11,6 +11,13 @@
   );
 }
 
+.card:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: ease-in 0.15s;
+}
+
 .card-group {
   padding: 0 0.5rem;
 }
@@ -74,8 +81,8 @@ u,
 }
 
 .card-img-top {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
 }
 
 .card {

@@ -25,7 +25,7 @@ const Signup = () => {
   return (
     <Fragment>
       <ReactTooltip place="bottom" html={true} className="tooltip-text" />
-      <div id="signup-container" className="container fade-in py-2">
+      <div id="signup-container" className="container pb-10 fade-in pt-4">
         <h3 className="mt-3 mb-0 heading-med">
           Let's Get Started <i class="fas fa-paw bg-grn-grad"></i>
         </h3>
@@ -150,7 +150,6 @@ const Signup = () => {
           >
             Get Started <i class="fas fa-caret-right"></i>
           </button>
-          <img src={FormBg} />
         </form>
       </div>
     </Fragment>

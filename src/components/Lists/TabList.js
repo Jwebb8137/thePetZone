@@ -58,7 +58,7 @@ const TabList = (props) => {
           </button>
         </li>
       </ul>
-      <div class="tab-content px-3 pt-0 pb-4" id="pills-tabContent">
+      <div class="tab-content px-3 pt-0 pb-10" id="pills-tabContent">
         <div
           class="tab-pane fade show active"
           id="pills-home"

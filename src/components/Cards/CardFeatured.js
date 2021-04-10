@@ -9,7 +9,7 @@ const CardFeatured = (props) => {
         <u>Featured Pet</u>
         <i class="fa fa-star bg-grn-grad" aria-hidden="true"></i>
       </div>
-      <img src={props.img} className="card-img-top" alt="..." />
+      <img src={props.img} alt="..." />
       <div className="card-body">
         <h5 className="card-title">Meet {props.name}!</h5>
         <p className="card-text">

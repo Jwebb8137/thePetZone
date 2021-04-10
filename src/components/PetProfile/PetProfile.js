@@ -4,6 +4,7 @@ import Map from "../Map/Map";
 import "./PetProfile.css";
 import ProfileVid from "../../assets/profile-vid.mp4";
 import PetProfileImg from "../../assets/pet-profile.jpg";
+import ImageModal from "../Modals/ImageModal";
 import SliderImg1 from "../../assets/pet-slider-5.jpg";
 import SliderImg2 from "../../assets/pet-slider-4.jpg";
 import SliderImg3 from "../../assets/pet-slider-3.jpg";
@@ -11,12 +12,39 @@ import SliderImg4 from "../../assets/pet-slider-2.jpg";
 import SliderImg5 from "../../assets/pet-slider-1.jpg";
 
 const PetProfile = () => {
+  const [enlargeImg, setEnlargeImg] = useState("");
+
+  const [fullScreen, setFullScreen] = useState(false);
   useEffect(() => {
     document.querySelector("body").scrollTo(0, 0);
   }, []);
 
+  const enlargeImgHandler = (e) => {
+    setFullScreen(true);
+    setEnlargeImg("enlarge-img");
+  };
+
+  const closeImg = (e) => {
+    setFullScreen(false);
+    setEnlargeImg("");
+  };
+
+  const fullScreenBg = (
+    <div id="pop-container" onClick={closeImg}>
+      <button
+        id="img-close"
+        type="button"
+        onClick={closeImg}
+        aria-label="Close"
+      >
+        Close
+      </button>
+    </div>
+  );
+
   return (
     <Fragment>
+      {!fullScreen ? null : fullScreenBg}
       <div id="pet-profile-container" className="container p-0">
         <div className="row">
           <div className="col-12 container p-0">
@@ -61,7 +89,15 @@ const PetProfile = () => {
           </div>
         </div>
         <div className="scrolling-wrapper my-3">
-          <img src={SliderImg1} className="slider-img shadow col-4 w-75 mx-3" />
+          <div
+            className="slider-img-container"
+            onClick={(e) => enlargeImgHandler(e)}
+          >
+            <img
+              src={SliderImg1}
+              className={`slider-img shadow col-4 w-75 mx-3 ${enlargeImg}`}
+            />
+          </div>
           <img src={SliderImg2} className="slider-img shadow col-4 w-75 mx-3" />
           <img src={SliderImg3} className="slider-img shadow col-4 w-75 mx-3" />
           <img src={SliderImg4} className="slider-img shadow col-4 w-75 mx-3" />

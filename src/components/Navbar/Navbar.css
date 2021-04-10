@@ -16,6 +16,10 @@ header {
   z-index: 9999 !important;
 }
 
+nav .profile-nav-title {
+  font-size: 1.35rem;
+}
+
 .brand-logo {
   max-width: 150px;
   float: left;

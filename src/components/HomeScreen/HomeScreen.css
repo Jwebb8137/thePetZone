@@ -100,8 +100,27 @@ button {
   border: 2px solid #212529;
 }
 
+.pb-10 {
+  padding-bottom: 15vh;
+}
+
 .fa-arrow-circle-right {
   margin-left: 5px;
+}
+
+.grow {
+  animation: growScale linear 1s infinite;
+}
+@keyframes growScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .lrg-img {
