@@ -4,11 +4,6 @@
   width: 100vw;
 }
 
-.video-full:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
 .lg-paw {
   font-size: 8rem;
 }
@@ -35,17 +30,20 @@ span {
   width: 100vw;
 }
 
-.main-heading,
 .sub-heading {
   font-family: "Sniglet", cursive;
-  font-size: 1.85rem;
+  font-size: 2.35rem;
   font-weight: 600;
+}
+
+.sub-heading u {
+  font-weight: inherit;
 }
 
 .display-heading {
   font-family: "Sniglet", cursive;
-  font-size: 1.85rem;
-  font-weight: 600;
+  font-size: 2.35rem;
+  font-weight: 500;
 }
 
 .home-p {
@@ -129,8 +127,12 @@ button {
 
 .display-paw {
   color: #d2fdcb;
-  font-size: 14rem;
+  font-size: 18rem;
   top: 0;
+}
+
+#home-container a:hover {
+  opacity: 1 !important;
 }
 
 #display-search {

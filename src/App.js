@@ -4,7 +4,7 @@ import HomeScreen from "./components/HomeScreen/HomeScreen";
 import Signin from "./components/Signin/Signin";
 import Signup from "./components/Signup/Signup";
 import Account from "./components/Account/Account";
-import VideoChat from "./components/VideoChat/VideoChat";
+import VideoChat from "./components/VideoChat/src/index";
 import PetProfile from "./components/PetProfile/PetProfile";
 import FavoritesScreen from "./components/FavoritesScreen/FavoritesScreen";
 import SearchScreen from "./components/SearchScreen/SearchScreen";

@@ -42,12 +42,19 @@ export default class HomeScreen extends Component {
   render() {
     return (
       <Fragment>
-        <div className="min-100-vw container fade-in px-0 m-0 green">
-          <i class="fas fa-paw grow green display-paw mt-4 mb-2 w-view"></i>
-          <div className="fade-in-1 w-view mt-3">
-            <h3 className="display-heading mb-0">Helping Families Find</h3>
+        <div
+          id="home-container"
+          className="min-100-vw container fade-in px-0 m-0 green"
+        >
+          <i class="fas fa-paw green display-paw mt-4 mb-2 w-view"></i>
+          <div className="fade-in-1 w-view mt-0">
+            <h3 className="display-heading mb-0">
+              Helping Families
+              <br />
+              Find Their
+            </h3>
             <h3 className="sub-heading mb-3">
-              the <u>Perfect Companion</u>
+              <u>Purfect Companion</u>
             </h3>
             <button id="display-search" class="btn submit shadow w-75">
               Search Now <i class="fas fa-caret-right"></i>

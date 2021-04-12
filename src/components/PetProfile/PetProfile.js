@@ -5,6 +5,7 @@ import "./PetProfile.css";
 import ProfileVid from "../../assets/profile-vid.mp4";
 import PetProfileImg from "../../assets/pet-profile.jpg";
 import ImageModal from "../Modals/ImageModal";
+import SliderImg from "../Slider/SliderImg";
 import SliderImg1 from "../../assets/pet-slider-5.jpg";
 import SliderImg2 from "../../assets/pet-slider-4.jpg";
 import SliderImg3 from "../../assets/pet-slider-3.jpg";
@@ -13,7 +14,7 @@ import SliderImg5 from "../../assets/pet-slider-1.jpg";
 
 const PetProfile = () => {
   const [enlargeImg, setEnlargeImg] = useState("");
-
+  const [fullImg, setFullImg] = useState("");
   const [fullScreen, setFullScreen] = useState(false);
   useEffect(() => {
     document.querySelector("body").scrollTo(0, 0);
@@ -29,15 +30,23 @@ const PetProfile = () => {
     setEnlargeImg("");
   };
 
+  const enlargeImgChange = (e) => {
+    console.log(e);
+    setFullImg(e);
+    setFullScreen(true);
+  };
+
   const fullScreenBg = (
-    <div id="pop-container" onClick={closeImg}>
+    <div id="pop-container" className="shadow" onClick={closeImg}>
+      <img src={fullImg} className="enlarge-img" />
       <button
         id="img-close"
+        className="shadow"
         type="button"
         onClick={closeImg}
         aria-label="Close"
       >
-        Close
+        <i class="fas fa-times m-0"></i>
       </button>
     </div>
   );
@@ -75,33 +84,45 @@ const PetProfile = () => {
             </p>
           </div>
           <div className="col-12 p-0 d-flex justify-content-center col-gap-1">
-            <button className="btn btn-success d-flex flex-column bg-dark-grad btn-profile m-2 mt-0">
-              <i class="fas fa-phone-volume"></i>
-              <span className="helper-text">Call</span>
-            </button>
+            <a href="tel:+491570156">
+              <button className="btn btn-success d-flex flex-column bg-dark-grad btn-profile m-2 mt-0">
+                <i class="fas fa-phone-volume m-0"></i>
+              </button>
+            </a>
             <Link
-              to="/Chat/ChatRoom"
-              className="btn btn-profile d-flex flex-column bg-back-grn m-2 mt-0"
+              to="/Chat/Video"
+              className="btn btn-profile d-flex bg-back-grn m-2 mt-0"
             >
-              <i class="fas fa-laptop"></i>
-              <span className="helper-text">Visit</span>
+              <i class="fas fa-laptop m-0"></i>
             </Link>
           </div>
         </div>
         <div className="scrolling-wrapper my-3">
-          <div
-            className="slider-img-container"
-            onClick={(e) => enlargeImgHandler(e)}
-          >
-            <img
-              src={SliderImg1}
-              className={`slider-img shadow col-4 w-75 mx-3 ${enlargeImg}`}
-            />
-          </div>
-          <img src={SliderImg2} className="slider-img shadow col-4 w-75 mx-3" />
-          <img src={SliderImg3} className="slider-img shadow col-4 w-75 mx-3" />
-          <img src={SliderImg4} className="slider-img shadow col-4 w-75 mx-3" />
-          <img src={SliderImg5} className="slider-img shadow col-4 w-75 mx-3" />
+          <SliderImg
+            img={SliderImg1}
+            enlarge={enlargeImg}
+            enlargeChange={enlargeImgChange}
+          />
+          <SliderImg
+            img={SliderImg2}
+            enlarge={enlargeImg}
+            enlargeChange={enlargeImgChange}
+          />{" "}
+          <SliderImg
+            img={SliderImg3}
+            enlarge={enlargeImg}
+            enlargeChange={enlargeImgChange}
+          />{" "}
+          <SliderImg
+            img={SliderImg4}
+            enlarge={enlargeImg}
+            enlargeChange={enlargeImgChange}
+          />{" "}
+          <SliderImg
+            img={SliderImg5}
+            enlarge={enlargeImg}
+            enlargeChange={enlargeImgChange}
+          />
         </div>
         <div className="col-12 mt-0">
           <h2 className="mb-1">* Available *</h2>
