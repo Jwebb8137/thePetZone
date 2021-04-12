@@ -6,7 +6,7 @@ import "./NavbarExt.css";
 const NavbarExt = () => {
   return (
     <div id="full-navbar">
-      <div className="navbar-ext">
+      <div className="navbar-ext bg-dark-grad py-0">
         <div className="row">
           <div className="col-3 d-flex">
             <div className="brand-logo">
@@ -22,8 +22,8 @@ const NavbarExt = () => {
           </div>
           <div className="col-9 d-flex justify-content-end align-center">
             <ul className="nav-list m-0 d-flex">
-              <Link to="/Favorites" className="fas fa-star"></Link>
-              <Link to="/Signin" className="fas fa-user-circle mx-4"></Link>
+              <Link to="/Favorites" className="fas fa-star bg-grn-grad"></Link>
+              <Link to="/Signin" className="fas fa-user-circle bg-grn-grad mx-4"></Link>
             </ul>
             <form class="form-nav form-inline my-2 my-lg-0">
               <input
@@ -33,7 +33,7 @@ const NavbarExt = () => {
                 aria-label="Search"
               />
               <button
-                class="btn btn-outline-success my-2 my-sm-0"
+                class="btn bg-grn my-2 my-sm-0"
                 type="submit"
               >
                 Search

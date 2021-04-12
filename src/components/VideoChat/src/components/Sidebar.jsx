@@ -3,7 +3,7 @@ import { Button, TextField, Grid, Typography, Container, Paper } from '@material
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Assignment, Phone, PhoneDisabled } from '@material-ui/icons';
 import { makeStyles } from '@material-ui/core/styles';
-
+import Logo from '../../../../assets/logo.png';
 import { SocketContext } from '../Context';
 
 const useStyles = makeStyles((theme) => ({
@@ -43,37 +43,47 @@ const Sidebar = ({ children }) => {
   const classes = useStyles();
 
   return (
-    <Container className={classes.container}>
-      <Paper elevation={10} className={classes.paper}>
+    <div className='container pb-10 bg-dark'>
+      <CopyToClipboard text={me}>
+        <Button id='copy-clipboard' className='btn bg-dark-grad btn-profile'>
+          <i class="far fa-clipboard m-0"></i>
+        </Button>
+      </CopyToClipboard>
+      {callAccepted && !callEnded ? (
+        <Button id='phone-disable' onClick={leaveCall} className='btn btn-profile bg-danger'>
+          <i class="fas fa-phone-slash m-0"></i>
+        </Button>
+      ) : (
+        <Button id='phone-send' onClick={() => callUser(idToCall)} className='btn btn-profile bg-back-grn'>
+          <i class="fas fa-phone"></i>
+        </Button>
+      )}
         <form className={classes.root} noValidate autoComplete="off">
-          <Grid container className={classes.gridContainer}>
-            <Grid item xs={12} md={6} className={classes.padding}>
-              <Typography gutterBottom variant="h6">Account Info</Typography>
-              <TextField label="Name" value={name} onChange={(e) => setName(e.target.value)} fullWidth />
-              <CopyToClipboard text={me} className={classes.margin}>
-                <Button variant="contained" color="primary" fullWidth startIcon={<Assignment fontSize="large" />}>
-                  Copy Your ID
-                </Button>
-              </CopyToClipboard>
-            </Grid>
-            <Grid item xs={12} md={6} className={classes.padding}>
-              <Typography gutterBottom variant="h6">Make a call</Typography>
-              <TextField label="ID to call" value={idToCall} onChange={(e) => setIdToCall(e.target.value)} fullWidth />
-              {callAccepted && !callEnded ? (
-                <Button variant="contained" color="secondary" startIcon={<PhoneDisabled fontSize="large" />} fullWidth onClick={leaveCall} className={classes.margin}>
-                  Hang Up
-                </Button>
-              ) : (
-                <Button variant="contained" color="primary" startIcon={<Phone fontSize="large" />} fullWidth onClick={() => callUser(idToCall)} className={classes.margin}>
-                  Call
-                </Button>
-              )}
-            </Grid>
-          </Grid>
+          <div class="col-12 mt-3">
+            <div class="form-floating mb-3">
+              <input
+                label="ID to call"
+                type="input"
+                class="form-control shadow-input chat-phone-input"
+                id="floatingInput"
+                placeholder="user123"
+                value={idToCall}
+                onChange={(e) => setIdToCall(e.target.value)}
+              />
+              <label for="floatingInput">Enter UserId</label>
+              <small
+                  id="passwordHelpBlock"
+                  class="form-text text-white d-block mb-3"
+                >
+                 Enter the User Id for who you wish to make a call to!
+                </small>
+              <img id='chat-logo' src={Logo} className='w-50' />
+            </div>
+          </div>
+              {/* <TextField label="ID to call" value={idToCall} onChange={(e) => setIdToCall(e.target.value)} /> */}
         </form>
         {children}
-      </Paper>
-    </Container>
+    </div>
   );
 };
 

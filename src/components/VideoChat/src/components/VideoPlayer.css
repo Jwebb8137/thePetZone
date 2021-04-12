@@ -1,0 +1,51 @@
+.secondary-user {
+  position: absolute;
+  top: 0;
+}
+
+#phone-disable {
+  border-radius: 50%;
+  position: absolute;
+  height: 68px;
+  width: 68px;
+  right: 5px;
+  top: -100px;
+}
+
+#phone-disable i {
+  font-size: 2rem;
+}
+
+#copy-clipboard {
+  border-radius: 50%;
+  position: absolute;
+  height: 68px;
+  width: 68px;
+  right: 5px;
+  top: -175px;
+}
+
+#copy-clipboard i {
+  color: #f7f7f7;
+}
+
+#phone-send {
+  border-radius: 50%;
+  height: 68px;
+  width: 68px;
+  position: absolute;
+  right: 5px;
+  top: -100px;
+}
+
+.chat-phone-input {
+  border: 2px solid #05bf3d;
+}
+
+#chat-logo {
+  margin-top: -25px;
+}
+
+#phone-send i {
+  font-size: 2rem;
+}

@@ -257,4 +257,7 @@ a:hover {
   .mobile-nav {
     display: none;
   }
+  .brand-logo img {
+    height: 100px;
+  }
 }
