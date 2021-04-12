@@ -38,6 +38,15 @@
   top: -100px;
 }
 
+#incoming-call {
+  font-family: 'Sniglet';
+  font-size: 1.25rem;
+  position: absolute;
+  left: 10vw;
+  top: -12vh;
+  width: 50vw;
+}
+
 .chat-phone-input {
   border: 2px solid #05bf3d;
 }

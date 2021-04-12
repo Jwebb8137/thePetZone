@@ -80,9 +80,11 @@ const Sidebar = ({ children }) => {
               <img id='chat-logo' src={Logo} className='w-50' />
             </div>
           </div>
+          <div>
+            {children}
+          </div>
               {/* <TextField label="ID to call" value={idToCall} onChange={(e) => setIdToCall(e.target.value)} /> */}
         </form>
-        {children}
     </div>
   );
 };
