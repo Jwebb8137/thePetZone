@@ -30,7 +30,7 @@
   -webkit-text-fill-color: transparent;
   transition: .5s;
   transform: scale(1.25);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .list-group-item {
