@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
 import "./Map.css";
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const MapMarker = () => <div className='map-marker'><i class="fas fa-map-marker-alt"></i></div>;
 
 class SimpleMap extends Component {
   static defaultProps = {
@@ -22,7 +22,7 @@ class SimpleMap extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
-          <AnyReactComponent lat={59.955413} lng={30.337844} text="My Marker" />
+          <MapMarker lat={59.955413} lng={30.337844} />
         </GoogleMapReact>
       </div>
     );

@@ -8,7 +8,7 @@ import "./SearchForm.css";
 const SearchForm = () => {
   return (
     <Fragment>
-      <div id="search-form" className="search-form-container">
+      <div id="search-form" className="search-form-container mx-3">
         <ul
           class="nav nav-pills bg-dark-grad nav-justified mb-0 px-0 pt-0"
           id="pills-tab"

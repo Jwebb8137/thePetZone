@@ -1,14 +1,14 @@
 #account-detail img {
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   width: 100%;
 }
 
 #account-detail .col-12 .flex-column {
-  background: #fff;
+  background: none;
 }
 
 #profile-edit {
-  background: #eafee6;
+  background: #fff;
   border: 1px solid #393d42;
   border-radius: 50%;
   font-size: 2rem;
@@ -19,6 +19,22 @@
   margin-top: -35.5px;
   opacity: 0.8;
   width: 71px;
+}
+
+#chart {
+  color: #393d42;
+}
+
+.bar-chart p{
+  color: #393d42;
+  font-family: "Sniglet";
+  font-size: 22px;
+}
+
+.bar-chart .helper-text{
+  color: #393d42;
+  font-family: "Roboto";
+  font-size: 18px;
 }
 
 #profile-edit:hover {

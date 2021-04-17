@@ -1,6 +1,4 @@
 import React, { useContext } from 'react';
-import { Button } from '@material-ui/core';
-
 import { SocketContext } from '../Context';
 
 const Notifications = () => {
@@ -9,8 +7,8 @@ const Notifications = () => {
   return (
     <>
       {call.isReceivingCall && !callAccepted && (
-        <div>
-          <button id='incoming-call' onClick={answerCall} className='btn grow btn-success text-dark bg-back-grn'>
+        <div className="fade-in">
+          <button id='incoming-call' onClick={answerCall} className='btn shake btn-success text-dark bg-back-grn'>
             Incoming Call
           </button>
         </div>

@@ -11,6 +11,10 @@
   margin-top: -1px;
 }
 
+#search-form {
+  background: #f7f7f7;
+}
+
 .search-form-container {
   border-radius: 13px;
 }
@@ -57,7 +61,7 @@
   border-left: 2px solid #000;
 }
 
-#search-form .nav-item .active i {
+#search-form .nav-item .active i, .nav-pills .nav-link.active {
   background: rgb(3, 192, 60);
   background: -webkit-linear-gradient(
     90deg,
@@ -90,7 +94,6 @@
 }
 
 #search-form .nav {
-  border-bottom: 3px solid #393d42;
   border-radius: 13px 13px 0 0;
   background: #393d42;
 }

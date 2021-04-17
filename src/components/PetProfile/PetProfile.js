@@ -54,7 +54,7 @@ const PetProfile = () => {
   return (
     <Fragment>
       {!fullScreen ? null : fullScreenBg}
-      <div id="pet-profile-container" className="container p-0">
+      <div id="pet-profile-container" className="container px-0 pt-0 pb-10">
         <div className="row">
           <div className="col-12 container p-0">
             <video
@@ -78,7 +78,7 @@ const PetProfile = () => {
         >
           <div className="col-12 mt-3">
             <h2 className="mb-0">Cheetoh</h2>
-            <p className="px-1 mb-3">
+            <p className="px-2 mb-3">
               This adorable young man is 12 weeks old and looking for somewhere
               to call home!
             </p>

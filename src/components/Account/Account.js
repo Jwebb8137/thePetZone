@@ -1,17 +1,18 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import BarChart from "../D3/Barchart";
 import TabList from "../Lists/TabList";
 import "./Account.css";
 import ProfileImg from "../../assets/profile-main.jpg";
 
-const Account = () => {
+const Account = () => {  
   useEffect(() => {
     document.querySelector("body").scrollTo(0, 0);
   }, []);
 
   return (
     <Fragment>
-      <div id="account-detail" className="container pt-3">
+      <div id="account-detail" className="container pt-3 pb-10">
         <div className="row ">
           <div className="col-12 mb-0 pb-0">
             <div className="d-flex flex-column align-items-center p-0">

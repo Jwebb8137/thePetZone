@@ -9,12 +9,28 @@
 }
 
 #pills-tab {
-  background: #fff;
-  border-radius: 0;
+  border-radius: 10px 10px 0 0;
 }
 
 #pills-tab .nav-link {
-  font-size: 1.25rem;
+  color: #fff;
+  font-size: 1.35rem;
+  font-family: "Sniglet";
+  font-weight: 500;
+}
+
+#pills-tab .nav-link.active {
+  background: rgb(3, 192, 60);
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(3, 192, 60) 0%,
+    rgb(92, 252, 140) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: .5s;
+  transform: scale(1.25);
+  font-weight: 600;
 }
 
 .list-group-item {
@@ -31,6 +47,7 @@
 .tab-content {
   background: #fff;
   border-radius: 0 0 10px 10px;
+  margin-top: 1rem;
 }
 
 .tab-content .btn-outline-dark {
